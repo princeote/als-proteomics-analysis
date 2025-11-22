@@ -1,0 +1,345 @@
+Protein	Protein ID	Entry Name	Gene	Protein Length	Organism	Protein Existence	Description	Protein Probability	Top Peptide Probability	Combined Total Peptides	Combined Spectral Count	Combined Unique Spectral Count	Combined Total Spectral Count	control_4_1 Spectral Count	control_4_1 Unique Spectral Count	control_4_1 Total Spectral Count	control_4_1 Intensity	Indistinguishable Proteins
+contam_sp|P00004|CYC_HORSE	P00004	CYC_HORSE	CYCS	105	Equus caballus	1:Experimental evidence at protein level	Cytochrome c	0.9724	0.9985	1	1	0	1	1	0	1	638985.3	sp|P99999|CYC_HUMAN
+contam_sp|P00761|TRYP_PIG	P00761	TRYP_PIG		231	Sus scrofa	1:Experimental evidence at protein level	Trypsin	1.0	0.999	4	6	6	6	6	6	6	7.5371872E8	
+contam_sp|P00767|CTRB_BOVIN	P00767	CTRB_BOVIN		245	Bos taurus	1:Experimental evidence at protein level	Chymotrypsinogen B	0.6963	0.9777	1	1	1	1	1	1	1	353832.3	
+contam_sp|P00883|ALDOA_RABIT	P00883	ALDOA_RABIT	ALDOA	364	Oryctolagus cuniculus	1:Experimental evidence at protein level	Fructose-bisphosphate aldolase A	1.0	0.9987	6	6	0	6	6	0	6	2884197.8	sp|P04075|ALDOA_HUMAN
+sp|A0A075B6I0|LV861_HUMAN	A0A075B6I0	LV861_HUMAN	IGLV8-61	122	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin lambda variable 8-61	0.8961	0.994	1	1	1	1	1	1	1	1905492.1	
+sp|A0A075B6I9|LV746_HUMAN	A0A075B6I9	LV746_HUMAN	IGLV7-46	117	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin lambda variable 7-46	1.0	0.9932	2	2	0	2	2	0	2	4884239.0	sp|P04211|LV743_HUMAN
+sp|A0A075B6K0|LV316_HUMAN	A0A075B6K0	LV316_HUMAN	IGLV3-16	115	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin lambda variable 3-16	0.8553	0.9912	1	1	0	1	1	0	1	769621.9	sp|P01717|LV325_HUMAN, sp|P01718|LV327_HUMAN
+sp|A0A075B6K4|LV310_HUMAN	A0A075B6K4	LV310_HUMAN	IGLV3-10	115	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin lambda variable 3-10	0.5779	0.9633	1	1	0	1	1	0	1	3198295.2	sp|P01715|LV301_HUMAN
+sp|A0A075B6K5|LV39_HUMAN	A0A075B6K5	LV39_HUMAN	IGLV3-9	115	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin lambda variable 3-9	0.9803	0.999	1	1	0	1	1	0	1	3995409.5	sp|P80748|LV321_HUMAN
+sp|A0A075B6R9|KVD24_HUMAN	A0A075B6R9	KVD24_HUMAN	IGKV2D-24	120	Homo sapiens	1:Experimental evidence at protein level	Probable non-functional immunoglobulin kappa variable 2D-24	1.0	0.9984	3	3	0	3	3	0	3	1.1166893E7	sp|A0A0C4DH68|KV224_HUMAN
+sp|A0A075B6S2|KVD29_HUMAN	A0A075B6S2	KVD29_HUMAN	IGKV2D-29	120	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin kappa variable 2D-29	0.9941	0.9989	2	1	0	2	1	0	2	1.5299782E7	sp|A0A0A0MRZ7|KVD26_HUMAN, sp|A2NJV5|KV229_HUMAN
+sp|A0A087WSY6|KVD15_HUMAN	A0A087WSY6	KVD15_HUMAN	IGKV3D-15	115	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin kappa variable 3D-15	1.0	0.9989	2	3	1	3	3	1	3	7154358.0	
+sp|A0A0A0MRZ8|KVD11_HUMAN	A0A0A0MRZ8	KVD11_HUMAN	IGKV3D-11	115	Homo sapiens	3:Protein inferred from homology	Immunoglobulin kappa variable 3D-11	1.0	0.999	2	2	0	2	2	0	2	9020276.0	sp|P04433|KV311_HUMAN
+sp|A0A0A0MS15|HV349_HUMAN	A0A0A0MS15	HV349_HUMAN	IGHV3-49	119	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin heavy variable 3-49	1.0	0.9946	3	2	2	3	2	2	3	2146157.0	
+sp|A0A0A0MT89|KJ01_HUMAN	A0A0A0MT89	KJ01_HUMAN	IGKJ1	12	Homo sapiens	4:Protein predicted	Immunoglobulin kappa joining 1	0.6503	0.9727	1	1	1	1	1	1	1	403062.03	
+sp|A0A0B4J1U7|HV601_HUMAN	A0A0B4J1U7	HV601_HUMAN	IGHV6-1	121	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin heavy variable 6-1	0.9999	0.9781	2	2	2	2	2	2	2	2863016.0	
+sp|A0A0B4J1V0|HV315_HUMAN	A0A0B4J1V0	HV315_HUMAN	IGHV3-15	119	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin heavy variable 3-15	0.8748	0.9738	2	1	1	2	1	1	2	2.6464574E7	
+sp|A0A0B4J1X5|HV374_HUMAN	A0A0B4J1X5	HV374_HUMAN	IGHV3-74	117	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin heavy variable 3-74	0.9848	0.9971	2	1	0	2	1	0	2	1.5948902E7	sp|A0A0C4DH42|HV366_HUMAN, sp|P01764|HV323_HUMAN, sp|P01767|HV353_HUMAN, sp|P01768|HV330_HUMAN, sp|P01772|HV333_HUMAN, sp|P0DP02|HVC33_HUMAN, sp|P0DP03|HVC05_HUMAN
+sp|A0A0B4J1Y9|HV372_HUMAN	A0A0B4J1Y9	HV372_HUMAN	IGHV3-72	119	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin heavy variable 3-72	0.856	0.9693	2	1	1	2	1	1	2	681320.0	
+sp|A0A0C4DH25|KVD20_HUMAN	A0A0C4DH25	KVD20_HUMAN	IGKV3D-20	116	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin kappa variable 3D-20	0.9887	0.999	2	2	1	2	2	1	2	2.3371056E7	
+sp|A0A0C4DH34|HV428_HUMAN	A0A0C4DH34	HV428_HUMAN	IGHV4-28	117	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin heavy variable 4-28	0.947	0.9971	1	1	1	1	1	1	1	746080.25	
+sp|A0A0C4DH36|HV338_HUMAN	A0A0C4DH36	HV338_HUMAN	IGHV3-38	116	Homo sapiens	1:Experimental evidence at protein level	Probable non-functional immunoglobulin heavy variable 3-38	0.9862	0.9974	2	1	1	2	1	1	2	807089.06	
+sp|A0A0C4DH38|HV551_HUMAN	A0A0C4DH38	HV551_HUMAN	IGHV5-51	117	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin heavy variable 5-51	1.0	0.9986	2	2	2	2	2	2	2	1505750.8	
+sp|A0A0C4DH41|HV461_HUMAN	A0A0C4DH41	HV461_HUMAN	IGHV4-61	118	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin heavy variable 4-61	0.9026	0.9944	1	1	0	1	1	0	1	4146465.8	sp|P01824|HV439_HUMAN, sp|P01825|HV459_HUMAN, sp|P06331|HV434_HUMAN, sp|P0DP06|HVD34_HUMAN, sp|P0DP08|HVD82_HUMAN
+sp|A0A0C4DH43|HV70D_HUMAN	A0A0C4DH43	HV70D_HUMAN	IGHV2-70D	119	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin heavy variable 2-70D	1.0	0.9805	2	2	2	2	2	2	2	612940.94	
+sp|A0A0C4DH72|KV106_HUMAN	A0A0C4DH72	KV106_HUMAN	IGKV1-6	117	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin kappa variable 1-6	0.9622	0.998	1	1	0	1	1	0	1	710601.8	sp|P01599|KV117_HUMAN
+sp|A0A0J9YXX1|HV5X1_HUMAN	A0A0J9YXX1	HV5X1_HUMAN	IGHV5-10-1	117	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin heavy variable 5-10-1	0.7619	0.9839	1	1	1	1	1	1	1	584589.44	
+sp|A5A3E0|POTEF_HUMAN	A5A3E0	POTEF_HUMAN	POTEF	1075	Homo sapiens	1:Experimental evidence at protein level	POTE ankyrin domain family member F	0.0	0.9989	3	2	0	3	2	0	3	2944483.8	sp|Q6S8J3|POTEE_HUMAN
+sp|A6NLU5|VTM2B_HUMAN	A6NLU5	VTM2B_HUMAN	VSTM2B	285	Homo sapiens	1:Experimental evidence at protein level	V-set and transmembrane domain-containing protein 2B	0.974	0.9986	1	1	1	1	1	1	1	705394.8	
+sp|B9A064|IGLL5_HUMAN	B9A064	IGLL5_HUMAN	IGLL5	214	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin lambda-like polypeptide 5	1.0	0.999	5	5	1	5	5	1	5	1.30416616E8	
+sp|O00142|KITM_HUMAN	O00142	KITM_HUMAN	TK2	265	Homo sapiens	1:Experimental evidence at protein level	Thymidine kinase 2, mitochondrial	0.7417	0.9821	1	1	1	1	1	1	1	0.0	
+sp|O00468|AGRIN_HUMAN	O00468	AGRIN_HUMAN	AGRN	2068	Homo sapiens	1:Experimental evidence at protein level	Agrin	0.8006	0.9872	1	1	1	1	1	1	1	760159.0	
+sp|O00533|NCHL1_HUMAN	O00533	NCHL1_HUMAN	CHL1	1208	Homo sapiens	1:Experimental evidence at protein level	Neural cell adhesion molecule L1-like protein	1.0	0.999	13	14	14	14	14	14	14	7329794.5	
+sp|O00584|RNT2_HUMAN	O00584	RNT2_HUMAN	RNASET2	256	Homo sapiens	1:Experimental evidence at protein level	Ribonuclease T2	1.0	0.9965	2	2	2	2	2	2	2	2646347.0	
+sp|O14498|ISLR_HUMAN	O14498	ISLR_HUMAN	ISLR	428	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin superfamily containing leucine-rich repeat protein	0.7658	0.9843	1	1	1	1	1	1	1	233121.06	
+sp|O14594|NCAN_HUMAN	O14594	NCAN_HUMAN	NCAN	1321	Homo sapiens	1:Experimental evidence at protein level	Neurocan core protein	1.0	0.9984	7	7	7	7	7	7	7	1811124.4	
+sp|O14791|APOL1_HUMAN	O14791	APOL1_HUMAN	APOL1	398	Homo sapiens	1:Experimental evidence at protein level	Apolipoprotein L1	1.0	0.9957	2	2	2	2	2	2	2	1264934.2	
+sp|O15240|VGF_HUMAN	O15240	VGF_HUMAN	VGF	615	Homo sapiens	1:Experimental evidence at protein level	Neurosecretory protein VGF	1.0	0.9989	13	13	13	13	13	13	13	5278220.5	
+sp|O15394|NCAM2_HUMAN	O15394	NCAM2_HUMAN	NCAM2	837	Homo sapiens	1:Experimental evidence at protein level	Neural cell adhesion molecule 2	1.0	0.9988	3	3	3	3	3	3	3	2578935.0	
+sp|O43405|COCH_HUMAN	O43405	COCH_HUMAN	COCH	550	Homo sapiens	1:Experimental evidence at protein level	Cochlin	0.8982	0.9941	1	1	1	1	1	1	1	615982.56	
+sp|O43493|TGON2_HUMAN	O43493	TGON2_HUMAN	TGOLN2	437	Homo sapiens	1:Experimental evidence at protein level	Trans-Golgi network integral membrane protein 2	1.0	0.9975	3	3	3	3	3	3	3	1556587.2	
+sp|O43505|B4GA1_HUMAN	O43505	B4GA1_HUMAN	B4GAT1	415	Homo sapiens	1:Experimental evidence at protein level	Beta-1,4-glucuronyltransferase 1	1.0	0.999	10	11	11	11	11	11	11	2.705737E7	
+sp|O60814|H2B1K_HUMAN	O60814	H2B1K_HUMAN	H2BC12	126	Homo sapiens	1:Experimental evidence at protein level	Histone H2B type 1-K	1.0	0.9952	2	2	0	2	2	0	2	4770425.5	sp|P57053|H2BFS_HUMAN, sp|P58876|H2B1D_HUMAN, sp|P62807|H2B1C_HUMAN, sp|Q5QNW6|H2B2F_HUMAN, sp|Q93079|H2B1H_HUMAN, sp|Q99877|H2B1N_HUMAN, sp|Q99879|H2B1M_HUMAN, sp|Q99880|H2B1L_HUMAN
+sp|O75144|ICOSL_HUMAN	O75144	ICOSL_HUMAN	ICOSLG	302	Homo sapiens	1:Experimental evidence at protein level	ICOS ligand	0.8884	0.9935	1	1	1	1	1	1	1	502396.7	
+sp|O75326|SEM7A_HUMAN	O75326	SEM7A_HUMAN	SEMA7A	666	Homo sapiens	1:Experimental evidence at protein level	Semaphorin-7A	1.0	0.999	9	11	11	11	11	11	11	3204932.8	
+sp|O75882|ATRN_HUMAN	O75882	ATRN_HUMAN	ATRN	1429	Homo sapiens	1:Experimental evidence at protein level	Attractin	0.5465	0.9585	1	1	1	1	1	1	1	396029.62	
+sp|O94856|NFASC_HUMAN	O94856	NFASC_HUMAN	NFASC	1347	Homo sapiens	1:Experimental evidence at protein level	Neurofascin	1.0	0.9949	8	8	8	8	8	8	8	1793054.6	
+sp|O94985|CSTN1_HUMAN	O94985	CSTN1_HUMAN	CLSTN1	981	Homo sapiens	1:Experimental evidence at protein level	Calsyntenin-1	1.0	0.9988	8	8	8	8	8	8	8	1.0731952E7	
+sp|O95502|NPTXR_HUMAN	O95502	NPTXR_HUMAN	NPTXR	500	Homo sapiens	1:Experimental evidence at protein level	Neuronal pentraxin receptor	1.0	0.9989	6	7	7	7	7	7	7	5619002.0	
+sp|P00441|SODC_HUMAN	P00441	SODC_HUMAN	SOD1	154	Homo sapiens	1:Experimental evidence at protein level	Superoxide dismutase [Cu-Zn]	1.0	0.9984	2	2	2	2	2	2	2	2.045008E7	
+sp|P00450|CERU_HUMAN	P00450	CERU_HUMAN	CP	1065	Homo sapiens	1:Experimental evidence at protein level	Ceruloplasmin	1.0	0.999	33	38	38	38	38	38	38	6.0950156E7	
+sp|P00734|THRB_HUMAN	P00734	THRB_HUMAN	F2	622	Homo sapiens	1:Experimental evidence at protein level	Prothrombin	1.0	0.9988	6	6	6	6	6	6	6	1.152313E7	
+sp|P00736|C1R_HUMAN	P00736	C1R_HUMAN	C1R	705	Homo sapiens	1:Experimental evidence at protein level	Complement C1r subcomponent	1.0	0.999	8	8	8	8	8	8	8	5144340.5	
+sp|P00738|HPT_HUMAN	P00738	HPT_HUMAN	HP	406	Homo sapiens	1:Experimental evidence at protein level	Haptoglobin	1.0	0.999	18	23	10	23	23	10	23	2.53883968E8	
+sp|P00746|CFAD_HUMAN	P00746	CFAD_HUMAN	CFD	253	Homo sapiens	1:Experimental evidence at protein level	Complement factor D	1.0	0.9986	3	3	3	3	3	3	3	3184890.8	
+sp|P00747|PLMN_HUMAN	P00747	PLMN_HUMAN	PLG	810	Homo sapiens	1:Experimental evidence at protein level	Plasminogen	1.0	0.9989	9	12	10	12	12	10	12	1.6465744E7	
+sp|P00748|FA12_HUMAN	P00748	FA12_HUMAN	F12	615	Homo sapiens	1:Experimental evidence at protein level	Coagulation factor XII	1.0	0.999	4	5	5	5	5	5	5	2818235.0	
+sp|P00751|CFAB_HUMAN	P00751	CFAB_HUMAN	CFB	764	Homo sapiens	1:Experimental evidence at protein level	Complement factor B	1.0	0.9989	22	24	24	24	24	24	24	2.7861436E7	
+sp|P01008|ANT3_HUMAN	P01008	ANT3_HUMAN	SERPINC1	464	Homo sapiens	1:Experimental evidence at protein level	Antithrombin-III	1.0	0.999	19	26	26	26	26	26	26	2.1504076E7	
+sp|P01009|A1AT_HUMAN	P01009	A1AT_HUMAN	SERPINA1	418	Homo sapiens	1:Experimental evidence at protein level	Alpha-1-antitrypsin	1.0	0.999	30	48	47	48	48	47	48	4.17221056E8	
+sp|P01011|AACT_HUMAN	P01011	AACT_HUMAN	SERPINA3	423	Homo sapiens	1:Experimental evidence at protein level	Alpha-1-antichymotrypsin	1.0	0.999	16	21	21	21	21	21	21	8.3413528E7	
+sp|P01019|ANGT_HUMAN	P01019	ANGT_HUMAN	AGT	476	Homo sapiens	1:Experimental evidence at protein level	Angiotensinogen	1.0	0.999	15	19	19	19	19	19	19	9.6371648E7	
+sp|P01023|A2MG_HUMAN	P01023	A2MG_HUMAN	A2M	1474	Homo sapiens	1:Experimental evidence at protein level	Alpha-2-macroglobulin	1.0	0.999	41	49	42	49	49	42	49	2.9040012E7	
+sp|P01024|CO3_HUMAN	P01024	CO3_HUMAN	C3	1663	Homo sapiens	1:Experimental evidence at protein level	Complement C3	1.0	0.999	82	104	104	104	104	104	104	9.0560576E7	
+sp|P01031|CO5_HUMAN	P01031	CO5_HUMAN	C5	1676	Homo sapiens	1:Experimental evidence at protein level	Complement C5	1.0	0.9986	10	10	10	10	10	10	10	2140966.5	
+sp|P01033|TIMP1_HUMAN	P01033	TIMP1_HUMAN	TIMP1	207	Homo sapiens	1:Experimental evidence at protein level	Metalloproteinase inhibitor 1	1.0	0.9977	2	2	2	2	2	2	2	2606310.0	
+sp|P01034|CYTC_HUMAN	P01034	CYTC_HUMAN	CST3	146	Homo sapiens	1:Experimental evidence at protein level	Cystatin-C	1.0	0.999	7	12	12	12	12	12	12	3.44877472E8	
+sp|P01042|KNG1_HUMAN	P01042	KNG1_HUMAN	KNG1	644	Homo sapiens	1:Experimental evidence at protein level	Kininogen-1	1.0	0.999	8	9	9	9	9	9	9	3.5275944E7	
+sp|P01210|PENK_HUMAN	P01210	PENK_HUMAN	PENK	267	Homo sapiens	1:Experimental evidence at protein level	Proenkephalin-A	0.9811	0.999	1	1	1	1	1	1	1	3121387.8	
+sp|P01344|IGF2_HUMAN	P01344	IGF2_HUMAN	IGF2	180	Homo sapiens	1:Experimental evidence at protein level	Insulin-like growth factor II	0.6339	0.9707	1	1	1	1	1	1	1	423110.12	
+sp|P01593|KVD33_HUMAN	P01593	KVD33_HUMAN	IGKV1D-33	117	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin kappa variable 1D-33	0.9806	0.999	1	1	0	1	1	0	1	1189889.4	sp|P01594|KV133_HUMAN
+sp|P01597|KV139_HUMAN	P01597	KV139_HUMAN	IGKV1-39	117	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin kappa variable 1-39	0.7665	0.9843	1	1	0	1	1	0	1	747666.0	sp|P04432|KVD39_HUMAN
+sp|P01602|KV105_HUMAN	P01602	KV105_HUMAN	IGKV1-5	117	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin kappa variable 1-5	0.9743	0.9986	1	1	1	1	1	1	1	2916533.0	
+sp|P01619|KV320_HUMAN	P01619	KV320_HUMAN	IGKV3-20	116	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin kappa variable 3-20	0.976	0.9954	2	1	1	2	1	1	2	1212040.6	
+sp|P01700|LV147_HUMAN	P01700	LV147_HUMAN	IGLV1-47	117	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin lambda variable 1-47	0.9693	0.9983	1	1	1	1	1	1	1	5497727.5	
+sp|P01701|LV151_HUMAN	P01701	LV151_HUMAN	IGLV1-51	117	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin lambda variable 1-51	1.0	0.99	2	2	2	2	2	2	2	5075152.0	
+sp|P01703|LV140_HUMAN	P01703	LV140_HUMAN	IGLV1-40	118	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin lambda variable 1-40	0.8079	0.9877	1	1	1	1	1	1	1	897835.8	
+sp|P01704|LV214_HUMAN	P01704	LV214_HUMAN	IGLV2-14	120	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin lambda variable 2-14	0.8147	0.9883	1	1	1	1	1	1	1	692807.8	
+sp|P01709|LV208_HUMAN	P01709	LV208_HUMAN	IGLV2-8	118	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin lambda variable 2-8	1.0	0.9814	2	3	2	3	3	2	3	7829187.0	
+sp|P01714|LV319_HUMAN	P01714	LV319_HUMAN	IGLV3-19	112	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin lambda variable 3-19	0.9998	0.958	1	2	2	2	2	2	2	1308753.0	
+sp|P01780|HV307_HUMAN	P01780	HV307_HUMAN	IGHV3-7	117	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin heavy variable 3-7	1.0	0.9985	4	5	2	5	5	2	5	2.0175098E7	
+sp|P01834|IGKC_HUMAN	P01834	IGKC_HUMAN	IGKC	107	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin kappa constant	1.0	0.999	6	6	6	6	6	6	6	3.2046448E7	
+sp|P01857|IGHG1_HUMAN	P01857	IGHG1_HUMAN	IGHG1	399	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin heavy constant gamma 1	1.0	0.999	8	10	4	10	10	4	10	3.55973184E8	
+sp|P01859|IGHG2_HUMAN	P01859	IGHG2_HUMAN	IGHG2	395	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin heavy constant gamma 2	1.0	0.999	6	6	5	9	6	5	9	3.42909856E8	
+sp|P01860|IGHG3_HUMAN	P01860	IGHG3_HUMAN	IGHG3	446	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin heavy constant gamma 3	1.0	0.9989	6	2	2	8	2	2	8	9165860.0	
+sp|P01861|IGHG4_HUMAN	P01861	IGHG4_HUMAN	IGHG4	396	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin heavy constant gamma 4	0.9973	0.9857	4	1	1	5	1	1	5	4826313.0	
+sp|P01871|IGHM_HUMAN	P01871	IGHM_HUMAN	IGHM	474	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin heavy constant mu	1.0	0.9947	4	4	4	4	4	4	4	1337038.0	
+sp|P01876|IGHA1_HUMAN	P01876	IGHA1_HUMAN	IGHA1	398	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin heavy constant alpha 1	1.0	0.999	6	6	2	6	6	2	6	1.04807736E8	
+sp|P01877|IGHA2_HUMAN	P01877	IGHA2_HUMAN	IGHA2	391	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin heavy constant alpha 2	0.9998	0.999	5	1	1	5	1	1	5	2478519.0	
+sp|P02647|APOA1_HUMAN	P02647	APOA1_HUMAN	APOA1	267	Homo sapiens	1:Experimental evidence at protein level	Apolipoprotein A-I	1.0	0.999	26	37	37	37	37	37	37	4.17810816E8	
+sp|P02649|APOE_HUMAN	P02649	APOE_HUMAN	APOE	317	Homo sapiens	1:Experimental evidence at protein level	Apolipoprotein E	1.0	0.999	24	31	31	31	31	31	31	3.30015104E8	
+sp|P02652|APOA2_HUMAN	P02652	APOA2_HUMAN	APOA2	100	Homo sapiens	1:Experimental evidence at protein level	Apolipoprotein A-II	1.0	0.999	4	5	5	5	5	5	5	1.11965776E8	
+sp|P02654|APOC1_HUMAN	P02654	APOC1_HUMAN	APOC1	83	Homo sapiens	1:Experimental evidence at protein level	Apolipoprotein C-I	1.0	0.9984	3	4	4	4	4	4	4	1.4648636E7	
+sp|P02655|APOC2_HUMAN	P02655	APOC2_HUMAN	APOC2	101	Homo sapiens	1:Experimental evidence at protein level	Apolipoprotein C-II	0.8759	0.9927	1	1	1	1	1	1	1	835782.94	
+sp|P02656|APOC3_HUMAN	P02656	APOC3_HUMAN	APOC3	99	Homo sapiens	1:Experimental evidence at protein level	Apolipoprotein C-III	1.0	0.999	3	3	3	3	3	3	3	1.4636126E7	
+sp|P02671|FIBA_HUMAN	P02671	FIBA_HUMAN	FGA	866	Homo sapiens	1:Experimental evidence at protein level	Fibrinogen alpha chain	1.0	0.9986	14	15	15	15	15	15	15	1.4304968E7	
+sp|P02675|FIBB_HUMAN	P02675	FIBB_HUMAN	FGB	491	Homo sapiens	1:Experimental evidence at protein level	Fibrinogen beta chain	1.0	0.999	14	16	16	16	16	16	16	1.6378134E7	
+sp|P02679|FIBG_HUMAN	P02679	FIBG_HUMAN	FGG	453	Homo sapiens	1:Experimental evidence at protein level	Fibrinogen gamma chain	1.0	0.999	12	13	13	13	13	13	13	1.4740374E7	
+sp|P02746|C1QB_HUMAN	P02746	C1QB_HUMAN	C1QB	253	Homo sapiens	1:Experimental evidence at protein level	Complement C1q subcomponent subunit B	1.0	0.999	3	3	3	3	3	3	3	7305104.0	
+sp|P02747|C1QC_HUMAN	P02747	C1QC_HUMAN	C1QC	245	Homo sapiens	1:Experimental evidence at protein level	Complement C1q subcomponent subunit C	1.0	0.9989	3	3	3	3	3	3	3	7389361.0	
+sp|P02748|CO9_HUMAN	P02748	CO9_HUMAN	C9	559	Homo sapiens	1:Experimental evidence at protein level	Complement component C9	1.0	0.9989	11	11	10	11	11	10	11	7044307.5	
+sp|P02749|APOH_HUMAN	P02749	APOH_HUMAN	APOH	345	Homo sapiens	1:Experimental evidence at protein level	Beta-2-glycoprotein 1	1.0	0.9977	6	6	6	6	6	6	6	2.7232768E7	
+sp|P02750|A2GL_HUMAN	P02750	A2GL_HUMAN	LRG1	347	Homo sapiens	1:Experimental evidence at protein level	Leucine-rich alpha-2-glycoprotein	1.0	0.9989	6	6	6	6	6	6	6	1.1369723E7	
+sp|P02751|FINC_HUMAN	P02751	FINC_HUMAN	FN1	2477	Homo sapiens	1:Experimental evidence at protein level	Fibronectin	1.0	0.999	37	38	38	38	38	38	38	1.4206123E7	
+sp|P02753|RET4_HUMAN	P02753	RET4_HUMAN	RBP4	201	Homo sapiens	1:Experimental evidence at protein level	Retinol-binding protein 4	1.0	0.996	3	3	3	3	3	3	3	8654854.0	
+sp|P02760|AMBP_HUMAN	P02760	AMBP_HUMAN	AMBP	352	Homo sapiens	1:Experimental evidence at protein level	Protein AMBP	1.0	0.997	2	2	2	2	2	2	2	4916147.0	
+sp|P02763|A1AG1_HUMAN	P02763	A1AG1_HUMAN	ORM1	201	Homo sapiens	1:Experimental evidence at protein level	Alpha-1-acid glycoprotein 1	1.0	0.999	7	9	9	11	9	9	11	1.84277856E8	
+sp|P02765|FETUA_HUMAN	P02765	FETUA_HUMAN	AHSG	367	Homo sapiens	1:Experimental evidence at protein level	Alpha-2-HS-glycoprotein	1.0	0.999	3	5	5	5	5	5	5	1.10775648E8	
+sp|P02766|TTHY_HUMAN	P02766	TTHY_HUMAN	TTR	147	Homo sapiens	1:Experimental evidence at protein level	Transthyretin	1.0	0.999	8	12	12	12	12	12	12	7.207288E7	
+sp|P02768|ALBU_HUMAN	P02768	ALBU_HUMAN	ALB	609	Homo sapiens	1:Experimental evidence at protein level	Albumin	1.0	0.999	31	41	36	41	41	36	41	9.2182477E9	
+sp|P02774|VTDB_HUMAN	P02774	VTDB_HUMAN	GC	474	Homo sapiens	1:Experimental evidence at protein level	Vitamin D-binding protein	1.0	0.999	13	14	14	14	14	14	14	6.9886496E7	
+sp|P02787|TRFE_HUMAN	P02787	TRFE_HUMAN	TF	698	Homo sapiens	1:Experimental evidence at protein level	Serotransferrin	1.0	0.999	24	38	38	38	38	38	38	7.4354694E8	
+sp|P02790|HEMO_HUMAN	P02790	HEMO_HUMAN	HPX	462	Homo sapiens	1:Experimental evidence at protein level	Hemopexin	1.0	0.999	15	19	17	19	19	17	19	1.86389408E8	
+sp|P04004|VTNC_HUMAN	P04004	VTNC_HUMAN	VTN	478	Homo sapiens	1:Experimental evidence at protein level	Vitronectin	1.0	0.9985	3	4	4	4	4	4	4	1.0883254E7	
+sp|P04156|PRIO_HUMAN	P04156	PRIO_HUMAN	PRNP	253	Homo sapiens	1:Experimental evidence at protein level	Major prion protein	1.0	0.9989	7	8	8	8	8	8	8	1.240938E7	
+sp|P04180|LCAT_HUMAN	P04180	LCAT_HUMAN	LCAT	440	Homo sapiens	1:Experimental evidence at protein level	Phosphatidylcholine-sterol acyltransferase	1.0	0.9972	2	2	2	2	2	2	2	1997677.0	
+sp|P04196|HRG_HUMAN	P04196	HRG_HUMAN	HRG	525	Homo sapiens	1:Experimental evidence at protein level	Histidine-rich glycoprotein	1.0	0.999	12	13	13	13	13	13	13	2.2864896E7	
+sp|P04216|THY1_HUMAN	P04216	THY1_HUMAN	THY1	161	Homo sapiens	1:Experimental evidence at protein level	Thy-1 membrane glycoprotein	1.0	0.998	2	2	2	2	2	2	2	6289659.0	
+sp|P04217|A1BG_HUMAN	P04217	A1BG_HUMAN	A1BG	495	Homo sapiens	1:Experimental evidence at protein level	Alpha-1B-glycoprotein	1.0	0.999	11	14	14	14	14	14	14	4.7964152E7	
+sp|P04406|G3P_HUMAN	P04406	G3P_HUMAN	GAPDH	335	Homo sapiens	1:Experimental evidence at protein level	Glyceraldehyde-3-phosphate dehydrogenase	0.9806	0.999	1	1	1	1	1	1	1	2154033.0	
+sp|P04908|H2A1B_HUMAN	P04908	H2A1B_HUMAN	H2AC4	130	Homo sapiens	1:Experimental evidence at protein level	Histone H2A type 1-B/E	0.9998	0.985	2	2	0	2	2	0	2	5657953.0	sp|P0C0S5|H2AZ_HUMAN, sp|P0C0S8|H2A1_HUMAN, sp|P16104|H2AX_HUMAN, sp|P20671|H2A1D_HUMAN, sp|Q16777|H2A2C_HUMAN, sp|Q6FI13|H2A2A_HUMAN, sp|Q71UI9|H2AV_HUMAN, sp|Q7L7L0|H2A3_HUMAN, sp|Q93077|H2A1C_HUMAN, sp|Q96KK5|H2A1H_HUMAN, sp|Q96QV6|H2A1A_HUMAN, sp|Q99878|H2A1J_HUMAN, sp|Q9BTM1|H2AJ_HUMAN
+sp|P05060|SCG1_HUMAN	P05060	SCG1_HUMAN	CHGB	677	Homo sapiens	1:Experimental evidence at protein level	Secretogranin-1	1.0	0.999	32	40	40	40	40	40	40	5.7760528E7	
+sp|P05067|A4_HUMAN	P05067	A4_HUMAN	APP	770	Homo sapiens	1:Experimental evidence at protein level	Amyloid-beta precursor protein	1.0	0.9988	16	19	17	19	19	17	19	1.3553593E7	
+sp|P05090|APOD_HUMAN	P05090	APOD_HUMAN	APOD	189	Homo sapiens	1:Experimental evidence at protein level	Apolipoprotein D	1.0	0.999	5	5	5	5	5	5	5	2.12871024E8	
+sp|P05155|IC1_HUMAN	P05155	IC1_HUMAN	SERPING1	500	Homo sapiens	1:Experimental evidence at protein level	Plasma protease C1 inhibitor	1.0	0.9987	10	11	11	11	11	11	11	5850815.5	
+sp|P05156|CFAI_HUMAN	P05156	CFAI_HUMAN	CFI	583	Homo sapiens	1:Experimental evidence at protein level	Complement factor I	1.0	0.999	6	6	6	6	6	6	6	8544188.0	
+sp|P05408|7B2_HUMAN	P05408	7B2_HUMAN	SCG5	212	Homo sapiens	1:Experimental evidence at protein level	Neuroendocrine protein 7B2	1.0	0.9976	2	2	2	2	2	2	2	1.5961894E7	
+sp|P05452|TETN_HUMAN	P05452	TETN_HUMAN	CLEC3B	202	Homo sapiens	1:Experimental evidence at protein level	Tetranectin	1.0	0.9976	2	2	2	2	2	2	2	6533488.0	
+sp|P05543|THBG_HUMAN	P05543	THBG_HUMAN	SERPINA7	415	Homo sapiens	1:Experimental evidence at protein level	Thyroxine-binding globulin	1.0	0.9965	6	6	6	6	6	6	6	2818836.8	
+sp|P05546|HEP2_HUMAN	P05546	HEP2_HUMAN	SERPIND1	499	Homo sapiens	1:Experimental evidence at protein level	Heparin cofactor 2	1.0	0.9989	11	11	11	11	11	11	11	9362461.0	
+sp|P05787|K2C8_HUMAN	P05787	K2C8_HUMAN	KRT8	483	Homo sapiens	1:Experimental evidence at protein level	Keratin, type II cytoskeletal 8	1.0	0.9919	3	3	1	3	3	1	3	1326852.4	
+sp|P06312|KV401_HUMAN	P06312	KV401_HUMAN	IGKV4-1	121	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin kappa variable 4-1	1.0	0.9929	1	2	2	2	2	2	2	5110232.0	
+sp|P06396|GELS_HUMAN	P06396	GELS_HUMAN	GSN	782	Homo sapiens	1:Experimental evidence at protein level	Gelsolin	1.0	0.999	28	32	32	32	32	32	32	5.9885556E7	
+sp|P06681|CO2_HUMAN	P06681	CO2_HUMAN	C2	752	Homo sapiens	1:Experimental evidence at protein level	Complement C2	1.0	0.9977	5	5	5	5	5	5	5	2832003.5	
+sp|P06703|S10A6_HUMAN	P06703	S10A6_HUMAN	S100A6	90	Homo sapiens	1:Experimental evidence at protein level	Protein S100-A6	0.9999	0.9913	2	2	2	2	2	2	2	893714.4	
+sp|P06727|APOA4_HUMAN	P06727	APOA4_HUMAN	APOA4	396	Homo sapiens	1:Experimental evidence at protein level	Apolipoprotein A-IV	1.0	0.9989	25	30	30	30	30	30	30	2.7799634E7	
+sp|P06733|ENOA_HUMAN	P06733	ENOA_HUMAN	ENO1	434	Homo sapiens	1:Experimental evidence at protein level	Alpha-enolase	1.0	0.9899	4	4	4	4	4	4	4	2814151.5	
+sp|P06748|NPM_HUMAN	P06748	NPM_HUMAN	NPM1	294	Homo sapiens	1:Experimental evidence at protein level	Nucleophosmin	1.0	0.992	2	2	2	2	2	2	2	1339587.2	
+sp|P07108|ACBP_HUMAN	P07108	ACBP_HUMAN	DBI	87	Homo sapiens	1:Experimental evidence at protein level	Acyl-CoA-binding protein	0.8932	0.9938	1	1	1	1	1	1	1	367942.3	
+sp|P07195|LDHB_HUMAN	P07195	LDHB_HUMAN	LDHB	334	Homo sapiens	1:Experimental evidence at protein level	L-lactate dehydrogenase B chain	1.0	0.999	4	4	4	4	4	4	4	2711971.2	
+sp|P07225|PROS_HUMAN	P07225	PROS_HUMAN	PROS1	676	Homo sapiens	1:Experimental evidence at protein level	Vitamin K-dependent protein S	1.0	0.9989	8	8	8	8	8	8	8	5561150.0	
+sp|P07333|CSF1R_HUMAN	P07333	CSF1R_HUMAN	CSF1R	972	Homo sapiens	1:Experimental evidence at protein level	Macrophage colony-stimulating factor 1 receptor	0.9984	0.9954	1	1	1	1	1	1	1	1025480.9	
+sp|P07339|CATD_HUMAN	P07339	CATD_HUMAN	CTSD	412	Homo sapiens	1:Experimental evidence at protein level	Cathepsin D	1.0	0.9989	8	10	10	10	10	10	10	5949473.5	
+sp|P07357|CO8A_HUMAN	P07357	CO8A_HUMAN	C8A	584	Homo sapiens	1:Experimental evidence at protein level	Complement component C8 alpha chain	1.0	0.9986	4	4	4	4	4	4	4	3730367.0	
+sp|P07358|CO8B_HUMAN	P07358	CO8B_HUMAN	C8B	591	Homo sapiens	1:Experimental evidence at protein level	Complement component C8 beta chain	1.0	0.9981	3	3	3	3	3	3	3	1762858.6	
+sp|P07360|CO8G_HUMAN	P07360	CO8G_HUMAN	C8G	202	Homo sapiens	1:Experimental evidence at protein level	Complement component C8 gamma chain	1.0	0.9989	4	4	4	4	4	4	4	4621232.0	
+sp|P07437|TBB5_HUMAN	P07437	TBB5_HUMAN	TUBB	444	Homo sapiens	1:Experimental evidence at protein level	Tubulin beta chain	1.0	0.9954	3	3	1	3	3	1	3	1392204.1	
+sp|P07711|CATL1_HUMAN	P07711	CATL1_HUMAN	CTSL	333	Homo sapiens	1:Experimental evidence at protein level	Procathepsin L	1.0	0.9953	3	3	1	3	3	1	3	1465711.5	
+sp|P07900|HS90A_HUMAN	P07900	HS90A_HUMAN	HSP90AA1	732	Homo sapiens	1:Experimental evidence at protein level	Heat shock protein HSP 90-alpha	0.9973	0.9855	4	1	1	4	1	1	4	500069.88	
+sp|P08185|CBG_HUMAN	P08185	CBG_HUMAN	SERPINA6	405	Homo sapiens	1:Experimental evidence at protein level	Corticosteroid-binding globulin	1.0	0.9988	9	9	9	9	9	9	9	8178158.0	
+sp|P08238|HS90B_HUMAN	P08238	HS90B_HUMAN	HSP90AB1	724	Homo sapiens	1:Experimental evidence at protein level	Heat shock protein HSP 90-beta	1.0	0.9989	5	5	0	5	5	0	5	3296606.0	
+sp|P08253|MMP2_HUMAN	P08253	MMP2_HUMAN	MMP2	660	Homo sapiens	1:Experimental evidence at protein level	72 kDa type IV collagenase	1.0	0.9979	4	4	4	4	4	4	4	1154025.5	
+sp|P08294|SODE_HUMAN	P08294	SODE_HUMAN	SOD3	240	Homo sapiens	1:Experimental evidence at protein level	Extracellular superoxide dismutase [Cu-Zn]	1.0	0.999	4	5	5	5	5	5	5	1.1366953E7	
+sp|P08571|CD14_HUMAN	P08571	CD14_HUMAN	CD14	375	Homo sapiens	1:Experimental evidence at protein level	Monocyte differentiation antigen CD14	1.0	0.9989	5	5	5	5	5	5	5	8527552.0	
+sp|P08603|CFAH_HUMAN	P08603	CFAH_HUMAN	CFH	1231	Homo sapiens	1:Experimental evidence at protein level	Complement factor H	1.0	0.999	17	21	18	21	21	18	21	1.467336E7	
+sp|P08697|A2AP_HUMAN	P08697	A2AP_HUMAN	SERPINF2	491	Homo sapiens	1:Experimental evidence at protein level	Alpha-2-antiplasmin	1.0	0.999	6	6	6	6	6	6	6	4212576.5	
+sp|P09382|LEG1_HUMAN	P09382	LEG1_HUMAN	LGALS1	135	Homo sapiens	1:Experimental evidence at protein level	Galectin-1	0.8179	0.9885	1	1	1	1	1	1	1	318024.34	
+sp|P09486|SPRC_HUMAN	P09486	SPRC_HUMAN	SPARC	303	Homo sapiens	1:Experimental evidence at protein level	SPARC	1.0	0.997	4	4	4	4	4	4	4	3870121.5	
+sp|P09603|CSF1_HUMAN	P09603	CSF1_HUMAN	CSF1	554	Homo sapiens	1:Experimental evidence at protein level	Macrophage colony-stimulating factor 1	0.9805	0.999	1	1	1	1	1	1	1	1290454.5	
+sp|P09668|CATH_HUMAN	P09668	CATH_HUMAN	CTSH	335	Homo sapiens	1:Experimental evidence at protein level	Pro-cathepsin H	1.0	0.963	2	3	3	3	3	3	3	1061608.8	
+sp|P09871|C1S_HUMAN	P09871	C1S_HUMAN	C1S	688	Homo sapiens	1:Experimental evidence at protein level	Complement C1s subcomponent	1.0	0.999	12	12	12	12	12	12	12	9590430.0	
+sp|P09972|ALDOC_HUMAN	P09972	ALDOC_HUMAN	ALDOC	364	Homo sapiens	1:Experimental evidence at protein level	Fructose-bisphosphate aldolase C	1.0	0.9989	4	3	3	4	3	3	4	1196346.6	
+sp|P0C0L4|CO4A_HUMAN	P0C0L4	CO4A_HUMAN	C4A	1744	Homo sapiens	1:Experimental evidence at protein level	Complement C4-A	1.0	0.9989	54	3	3	69	3	3	69	1.2090576E7	
+sp|P0C0L5|CO4B_HUMAN	P0C0L5	CO4B_HUMAN	C4B	1744	Homo sapiens	1:Experimental evidence at protein level	Complement C4-B	1.0	0.999	56	72	6	72	72	6	72	6.6323972E7	
+sp|P0CG47|UBB_HUMAN	P0CG47	UBB_HUMAN	UBB	229	Homo sapiens	1:Experimental evidence at protein level	Polyubiquitin-B	1.0	0.9947	4	4	0	4	4	0	4	1.6275388E7	sp|P0CG48|UBC_HUMAN, sp|P62979|RS27A_HUMAN, sp|P62987|RL40_HUMAN
+sp|P0DOY2|IGLC2_HUMAN	P0DOY2	IGLC2_HUMAN	IGLC2	106	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin lambda constant 2	1.0	0.999	4	2	0	4	2	0	4	7.8342328E7	sp|P0DOY3|IGLC3_HUMAN
+sp|P0DP58|LYNX1_HUMAN	P0DP58	LYNX1_HUMAN	LYNX1	116	Homo sapiens	1:Experimental evidence at protein level	Ly-6/neurotoxin-like protein 1	0.6449	0.9721	1	1	1	1	1	1	1	3228588.5	
+sp|P10412|H14_HUMAN	P10412	H14_HUMAN	H1-4	219	Homo sapiens	1:Experimental evidence at protein level	Histone H1.4	0.6021	0.9666	1	1	0	1	1	0	1	625002.8	sp|P16402|H13_HUMAN, sp|P16403|H12_HUMAN, sp|P22492|H1T_HUMAN, sp|Q02539|H11_HUMAN
+sp|P10451|OSTP_HUMAN	P10451	OSTP_HUMAN	SPP1	314	Homo sapiens	1:Experimental evidence at protein level	Osteopontin	1.0	0.999	8	10	10	10	10	10	10	5.438962E7	
+sp|P10599|THIO_HUMAN	P10599	THIO_HUMAN	TXN	105	Homo sapiens	1:Experimental evidence at protein level	Thioredoxin	0.9665	0.9982	1	1	1	1	1	1	1	415450.03	
+sp|P10643|CO7_HUMAN	P10643	CO7_HUMAN	C7	843	Homo sapiens	1:Experimental evidence at protein level	Complement component C7	1.0	0.9989	8	8	8	8	8	8	8	4736176.5	
+sp|P10645|CMGA_HUMAN	P10645	CMGA_HUMAN	CHGA	457	Homo sapiens	1:Experimental evidence at protein level	Chromogranin-A	1.0	0.999	7	9	9	9	9	9	9	2.628972E7	
+sp|P10809|CH60_HUMAN	P10809	CH60_HUMAN	HSPD1	573	Homo sapiens	1:Experimental evidence at protein level	60 kDa heat shock protein, mitochondrial	0.6726	0.9752	1	1	1	1	1	1	1	509555.38	
+sp|P10909|CLUS_HUMAN	P10909	CLUS_HUMAN	CLU	449	Homo sapiens	1:Experimental evidence at protein level	Clusterin	1.0	0.999	14	23	23	23	23	23	23	2.16107328E8	
+sp|P11021|BIP_HUMAN	P11021	BIP_HUMAN	HSPA5	654	Homo sapiens	1:Experimental evidence at protein level	Endoplasmic reticulum chaperone BiP	1.0	0.9731	2	2	1	2	2	1	2	295778.28	
+sp|P11142|HSP7C_HUMAN	P11142	HSP7C_HUMAN	HSPA8	646	Homo sapiens	1:Experimental evidence at protein level	Heat shock cognate 71 kDa protein	1.0	0.9842	4	4	2	4	4	2	4	1387345.4	
+sp|P11362|FGFR1_HUMAN	P11362	FGFR1_HUMAN	FGFR1	822	Homo sapiens	1:Experimental evidence at protein level	Fibroblast growth factor receptor 1	0.964	0.9981	1	1	1	1	1	1	1	297697.53	
+sp|P12109|CO6A1_HUMAN	P12109	CO6A1_HUMAN	COL6A1	1028	Homo sapiens	1:Experimental evidence at protein level	Collagen alpha-1(VI) chain	1.0	0.999	7	7	7	7	7	7	7	3299029.8	
+sp|P12259|FA5_HUMAN	P12259	FA5_HUMAN	F5	2224	Homo sapiens	1:Experimental evidence at protein level	Coagulation factor V	1.0	0.9985	4	4	4	4	4	4	4	1227558.5	
+sp|P12882|MYH1_HUMAN	P12882	MYH1_HUMAN	MYH1	1939	Homo sapiens	1:Experimental evidence at protein level	Myosin-1	0.9359	0.9883	2	1	0	2	1	0	2	301033.16	sp|P13535|MYH8_HUMAN, sp|Q9UKX2|MYH2_HUMAN
+sp|P13473|LAMP2_HUMAN	P13473	LAMP2_HUMAN	LAMP2	410	Homo sapiens	1:Experimental evidence at protein level	Lysosome-associated membrane glycoprotein 2	1.0	0.9986	3	3	3	3	3	3	3	2737403.2	
+sp|P13521|SCG2_HUMAN	P13521	SCG2_HUMAN	SCG2	617	Homo sapiens	1:Experimental evidence at protein level	Secretogranin-2	1.0	0.997	6	7	7	7	7	7	7	4761140.0	
+sp|P13591|NCAM1_HUMAN	P13591	NCAM1_HUMAN	NCAM1	858	Homo sapiens	1:Experimental evidence at protein level	Neural cell adhesion molecule 1	1.0	0.999	19	22	22	22	22	22	22	1.2897595E7	
+sp|P13639|EF2_HUMAN	P13639	EF2_HUMAN	EEF2	858	Homo sapiens	1:Experimental evidence at protein level	Elongation factor 2	1.0	0.9989	4	4	4	4	4	4	4	962875.9	
+sp|P13671|CO6_HUMAN	P13671	CO6_HUMAN	C6	934	Homo sapiens	1:Experimental evidence at protein level	Complement component C6	1.0	0.9982	5	5	5	5	5	5	5	2159599.0	
+sp|P13987|CD59_HUMAN	P13987	CD59_HUMAN	CD59	128	Homo sapiens	1:Experimental evidence at protein level	CD59 glycoprotein	0.8319	0.9896	1	1	1	1	1	1	1	1106534.5	
+sp|P14618|KPYM_HUMAN	P14618	KPYM_HUMAN	PKM	531	Homo sapiens	1:Experimental evidence at protein level	Pyruvate kinase PKM	1.0	0.9989	9	9	9	9	9	9	9	3773987.8	
+sp|P16035|TIMP2_HUMAN	P16035	TIMP2_HUMAN	TIMP2	220	Homo sapiens	1:Experimental evidence at protein level	Metalloproteinase inhibitor 2	1.0	0.9817	2	2	2	2	2	2	2	1764214.1	
+sp|P16070|CD44_HUMAN	P16070	CD44_HUMAN	CD44	742	Homo sapiens	1:Experimental evidence at protein level	CD44 antigen	1.0	0.999	2	2	2	2	2	2	2	4874762.0	
+sp|P16870|CBPE_HUMAN	P16870	CBPE_HUMAN	CPE	476	Homo sapiens	1:Experimental evidence at protein level	Carboxypeptidase E	1.0	0.999	11	11	11	11	11	11	11	7421813.0	
+sp|P17174|AATC_HUMAN	P17174	AATC_HUMAN	GOT1	413	Homo sapiens	1:Experimental evidence at protein level	Aspartate aminotransferase, cytoplasmic	1.0	0.9732	2	2	2	2	2	2	2	1161502.4	
+sp|P17900|SAP3_HUMAN	P17900	SAP3_HUMAN	GM2A	193	Homo sapiens	1:Experimental evidence at protein level	Ganglioside GM2 activator	1.0	0.9984	4	4	4	4	4	4	4	8895961.0	
+sp|P19021|AMD_HUMAN	P19021	AMD_HUMAN	PAM	973	Homo sapiens	1:Experimental evidence at protein level	Peptidyl-glycine alpha-amidating monooxygenase	1.0	0.9908	4	4	4	4	4	4	4	2312710.8	
+sp|P19022|CADH2_HUMAN	P19022	CADH2_HUMAN	CDH2	906	Homo sapiens	1:Experimental evidence at protein level	Cadherin-2	1.0	0.9989	7	8	8	8	8	8	8	4808607.5	
+sp|P19652|A1AG2_HUMAN	P19652	A1AG2_HUMAN	ORM2	201	Homo sapiens	1:Experimental evidence at protein level	Alpha-1-acid glycoprotein 2	1.0	0.999	7	11	9	11	11	9	11	9.8258848E7	
+sp|P19823|ITIH2_HUMAN	P19823	ITIH2_HUMAN	ITIH2	946	Homo sapiens	1:Experimental evidence at protein level	Inter-alpha-trypsin inhibitor heavy chain H2	1.0	0.9989	15	16	16	16	16	16	16	9233319.0	
+sp|P19827|ITIH1_HUMAN	P19827	ITIH1_HUMAN	ITIH1	911	Homo sapiens	1:Experimental evidence at protein level	Inter-alpha-trypsin inhibitor heavy chain H1	1.0	0.999	10	11	11	11	11	11	11	4985521.5	
+sp|P20062|TCO2_HUMAN	P20062	TCO2_HUMAN	TCN2	427	Homo sapiens	1:Experimental evidence at protein level	Transcobalamin-2	0.694	0.9775	1	1	1	1	1	1	1	223235.17	
+sp|P20472|PRVA_HUMAN	P20472	PRVA_HUMAN	PVALB	110	Homo sapiens	1:Experimental evidence at protein level	Parvalbumin alpha	0.999	0.9985	1	1	1	1	1	1	1	491864.47	
+sp|P20774|MIME_HUMAN	P20774	MIME_HUMAN	OGN	298	Homo sapiens	1:Experimental evidence at protein level	Mimecan	1.0	0.9988	8	8	8	8	8	8	8	1.3756709E7	
+sp|P21802|FGFR2_HUMAN	P21802	FGFR2_HUMAN	FGFR2	821	Homo sapiens	1:Experimental evidence at protein level	Fibroblast growth factor receptor 2	1.0	0.9886	2	2	2	2	2	2	2	1082387.8	
+sp|P22352|GPX3_HUMAN	P22352	GPX3_HUMAN	GPX3	226	Homo sapiens	1:Experimental evidence at protein level	Glutathione peroxidase 3	1.0	0.9986	3	3	3	3	3	3	3	2010435.0	
+sp|P22626|ROA2_HUMAN	P22626	ROA2_HUMAN	HNRNPA2B1	353	Homo sapiens	1:Experimental evidence at protein level	Heterogeneous nuclear ribonucleoproteins A2/B1	1.0	0.9972	2	2	2	2	2	2	2	603981.0	
+sp|P22692|IBP4_HUMAN	P22692	IBP4_HUMAN	IGFBP4	258	Homo sapiens	1:Experimental evidence at protein level	Insulin-like growth factor-binding protein 4	0.7051	0.9786	1	1	1	1	1	1	1	945824.4	
+sp|P23142|FBLN1_HUMAN	P23142	FBLN1_HUMAN	FBLN1	703	Homo sapiens	1:Experimental evidence at protein level	Fibulin-1	1.0	0.999	7	9	9	9	9	9	9	8212866.5	
+sp|P23284|PPIB_HUMAN	P23284	PPIB_HUMAN	PPIB	216	Homo sapiens	1:Experimental evidence at protein level	Peptidyl-prolyl cis-trans isomerase B	1.0	0.9963	3	3	3	3	3	3	3	1030998.7	
+sp|P23468|PTPRD_HUMAN	P23468	PTPRD_HUMAN	PTPRD	1912	Homo sapiens	1:Experimental evidence at protein level	Receptor-type tyrosine-protein phosphatase delta	1.0	0.9987	3	3	2	3	3	2	3	1053907.0	
+sp|P23471|PTPRZ_HUMAN	P23471	PTPRZ_HUMAN	PTPRZ1	2315	Homo sapiens	1:Experimental evidence at protein level	Receptor-type tyrosine-protein phosphatase zeta	1.0	0.9989	5	5	5	5	5	5	5	2249542.5	
+sp|P23515|OMGP_HUMAN	P23515	OMGP_HUMAN	OMG	440	Homo sapiens	1:Experimental evidence at protein level	Oligodendrocyte-myelin glycoprotein	1.0	0.9987	3	3	3	3	3	3	3	5685262.0	
+sp|P23582|ANFC_HUMAN	P23582	ANFC_HUMAN	NPPC	126	Homo sapiens	1:Experimental evidence at protein level	C-type natriuretic peptide	0.8674	0.9921	1	1	1	1	1	1	1	1041069.56	
+sp|P24592|IBP6_HUMAN	P24592	IBP6_HUMAN	IGFBP6	240	Homo sapiens	1:Experimental evidence at protein level	Insulin-like growth factor-binding protein 6	1.0	0.9982	3	4	4	4	4	4	4	1.4458026E7	
+sp|P25311|ZA2G_HUMAN	P25311	ZA2G_HUMAN	AZGP1	298	Homo sapiens	1:Experimental evidence at protein level	Zinc-alpha-2-glycoprotein	1.0	0.999	14	17	17	17	17	17	17	2.9128754E7	
+sp|P27169|PON1_HUMAN	P27169	PON1_HUMAN	PON1	355	Homo sapiens	1:Experimental evidence at protein level	Serum paraoxonase/arylesterase 1	1.0	0.9989	7	7	5	7	7	5	7	3110317.5	
+sp|P27797|CALR_HUMAN	P27797	CALR_HUMAN	CALR	417	Homo sapiens	1:Experimental evidence at protein level	Calreticulin	0.7364	0.9817	1	1	1	1	1	1	1	420997.9	
+sp|P29622|KAIN_HUMAN	P29622	KAIN_HUMAN	SERPINA4	427	Homo sapiens	1:Experimental evidence at protein level	Kallistatin	1.0	0.9989	8	8	8	8	8	8	8	2463277.8	
+sp|P30086|PEBP1_HUMAN	P30086	PEBP1_HUMAN	PEBP1	187	Homo sapiens	1:Experimental evidence at protein level	Phosphatidylethanolamine-binding protein 1	1.0	0.999	4	4	4	4	4	4	4	5805845.0	
+sp|P34096|RNAS4_HUMAN	P34096	RNAS4_HUMAN	RNASE4	147	Homo sapiens	1:Experimental evidence at protein level	Ribonuclease 4	0.8968	0.994	1	1	1	1	1	1	1	1036283.7	
+sp|P35542|SAA4_HUMAN	P35542	SAA4_HUMAN	SAA4	130	Homo sapiens	1:Experimental evidence at protein level	Serum amyloid A-4 protein	1.0	0.9989	3	4	4	4	4	4	4	7815803.0	
+sp|P36222|CH3L1_HUMAN	P36222	CH3L1_HUMAN	CHI3L1	383	Homo sapiens	1:Experimental evidence at protein level	Chitinase-3-like protein 1	1.0	0.9989	12	12	12	12	12	12	12	1.0384975E7	
+sp|P36955|PEDF_HUMAN	P36955	PEDF_HUMAN	SERPINF1	418	Homo sapiens	1:Experimental evidence at protein level	Pigment epithelium-derived factor	1.0	0.999	19	21	21	21	21	21	21	5.6603964E7	
+sp|P39060|COIA1_HUMAN	P39060	COIA1_HUMAN	COL18A1	1754	Homo sapiens	1:Experimental evidence at protein level	Collagen alpha-1(XVIII) chain	1.0	0.999	3	3	3	3	3	3	3	2409082.8	
+sp|P40189|IL6RB_HUMAN	P40189	IL6RB_HUMAN	IL6ST	918	Homo sapiens	1:Experimental evidence at protein level	Interleukin-6 receptor subunit beta	0.541	0.9576	1	1	1	1	1	1	1	807909.06	
+sp|P40925|MDHC_HUMAN	P40925	MDHC_HUMAN	MDH1	334	Homo sapiens	1:Experimental evidence at protein level	Malate dehydrogenase, cytoplasmic	0.9326	0.9962	1	1	1	1	1	1	1	0.0	
+sp|P41222|PTGDS_HUMAN	P41222	PTGDS_HUMAN	PTGDS	190	Homo sapiens	1:Experimental evidence at protein level	Prostaglandin-H2 D-isomerase	1.0	0.999	7	9	9	9	9	9	9	1.47792205E9	
+sp|P41271|NBL1_HUMAN	P41271	NBL1_HUMAN	NBL1	181	Homo sapiens	1:Experimental evidence at protein level	Neuroblastoma suppressor of tumorigenicity 1	0.6034	0.9668	1	1	1	1	1	1	1	1985867.9	
+sp|P42785|PCP_HUMAN	P42785	PCP_HUMAN	PRCP	496	Homo sapiens	1:Experimental evidence at protein level	Lysosomal Pro-X carboxypeptidase	0.5769	0.9631	1	1	1	1	1	1	1	402988.6	
+sp|P43121|MUC18_HUMAN	P43121	MUC18_HUMAN	MCAM	646	Homo sapiens	1:Experimental evidence at protein level	Cell surface glycoprotein MUC18	1.0	0.9989	8	8	8	8	8	8	8	4289973.5	
+sp|P43251|BTD_HUMAN	P43251	BTD_HUMAN	BTD	543	Homo sapiens	1:Experimental evidence at protein level	Biotinidase	1.0	0.9981	4	4	4	4	4	4	4	4105112.0	
+sp|P43652|AFAM_HUMAN	P43652	AFAM_HUMAN	AFM	599	Homo sapiens	1:Experimental evidence at protein level	Afamin	1.0	0.999	10	10	10	10	10	10	10	8835195.0	
+sp|P48058|GRIA4_HUMAN	P48058	GRIA4_HUMAN	GRIA4	902	Homo sapiens	1:Experimental evidence at protein level	Glutamate receptor 4	0.6855	0.9766	1	1	1	1	1	1	1	348052.94	
+sp|P49908|SEPP1_HUMAN	P49908	SEPP1_HUMAN	SELENOP	381	Homo sapiens	1:Experimental evidence at protein level	Selenoprotein P	1.0	0.9933	3	3	3	3	3	3	3	1643337.9	
+sp|P51693|APLP1_HUMAN	P51693	APLP1_HUMAN	APLP1	650	Homo sapiens	1:Experimental evidence at protein level	Amyloid beta precursor like protein 1	1.0	0.999	13	17	17	17	17	17	17	2.8315614E7	
+sp|P51884|LUM_HUMAN	P51884	LUM_HUMAN	LUM	338	Homo sapiens	1:Experimental evidence at protein level	Lumican	1.0	0.9989	6	6	6	6	6	6	6	6730814.0	
+sp|P54289|CA2D1_HUMAN	P54289	CA2D1_HUMAN	CACNA2D1	1103	Homo sapiens	1:Experimental evidence at protein level	Voltage-dependent calcium channel subunit alpha-2/delta-1	1.0	0.993	4	4	4	4	4	4	4	1341673.0	
+sp|P54764|EPHA4_HUMAN	P54764	EPHA4_HUMAN	EPHA4	986	Homo sapiens	1:Experimental evidence at protein level	Ephrin type-A receptor 4	1.0	0.999	2	2	2	2	2	2	2	1773407.2	
+sp|P55058|PLTP_HUMAN	P55058	PLTP_HUMAN	PLTP	493	Homo sapiens	1:Experimental evidence at protein level	Phospholipid transfer protein	1.0	0.9989	6	8	8	8	8	8	8	4187882.5	
+sp|P55083|MFAP4_HUMAN	P55083	MFAP4_HUMAN	MFAP4	255	Homo sapiens	1:Experimental evidence at protein level	Microfibril-associated glycoprotein 4	0.8655	0.992	1	1	1	1	1	1	1	1078382.0	
+sp|P55283|CADH4_HUMAN	P55283	CADH4_HUMAN	CDH4	916	Homo sapiens	1:Experimental evidence at protein level	Cadherin-4	0.7487	0.9828	1	1	1	1	1	1	1	268722.53	
+sp|P55290|CAD13_HUMAN	P55290	CAD13_HUMAN	CDH13	713	Homo sapiens	1:Experimental evidence at protein level	Cadherin-13	1.0	0.9989	4	4	4	4	4	4	4	4956540.5	
+sp|P60174|TPIS_HUMAN	P60174	TPIS_HUMAN	TPI1	249	Homo sapiens	1:Experimental evidence at protein level	Triosephosphate isomerase	1.0	0.9931	2	2	2	2	2	2	2	1478991.1	
+sp|P60709|ACTB_HUMAN	P60709	ACTB_HUMAN	ACTB	375	Homo sapiens	1:Experimental evidence at protein level	Actin, cytoplasmic 1	1.0	0.9988	8	6	0	8	6	0	8	8947355.0	sp|P63261|ACTG_HUMAN
+sp|P61626|LYSC_HUMAN	P61626	LYSC_HUMAN	LYZ	148	Homo sapiens	1:Experimental evidence at protein level	Lysozyme C	1.0	0.9853	3	3	3	3	3	3	3	3321185.8	
+sp|P61769|B2MG_HUMAN	P61769	B2MG_HUMAN	B2M	119	Homo sapiens	1:Experimental evidence at protein level	Beta-2-microglobulin	1.0	0.999	3	5	5	5	5	5	5	2.04718704E8	
+sp|P61916|NPC2_HUMAN	P61916	NPC2_HUMAN	NPC2	151	Homo sapiens	1:Experimental evidence at protein level	NPC intracellular cholesterol transporter 2	1.0	0.998	6	7	7	7	7	7	7	1.0830102E7	
+sp|P62736|ACTA_HUMAN	P62736	ACTA_HUMAN	ACTA2	377	Homo sapiens	1:Experimental evidence at protein level	Actin, aortic smooth muscle	0.9998	0.9839	7	1	0	7	1	0	7	1332270.4	sp|P68032|ACTC_HUMAN, sp|P68133|ACTS_HUMAN
+sp|P62805|H4_HUMAN	P62805	H4_HUMAN	H4C1	103	Homo sapiens	1:Experimental evidence at protein level	Histone H4	1.0	0.9954	3	3	3	3	3	3	3	6484693.0	
+sp|P62937|PPIA_HUMAN	P62937	PPIA_HUMAN	PPIA	165	Homo sapiens	1:Experimental evidence at protein level	Peptidyl-prolyl cis-trans isomerase A	1.0	0.9975	2	2	2	2	2	2	2	1585693.4	
+sp|P63104|1433Z_HUMAN	P63104	1433Z_HUMAN	YWHAZ	245	Homo sapiens	1:Experimental evidence at protein level	14-3-3 protein zeta/delta	1.0	0.999	2	2	2	2	2	2	2	969991.25	
+sp|P68104|EF1A1_HUMAN	P68104	EF1A1_HUMAN	EEF1A1	462	Homo sapiens	1:Experimental evidence at protein level	Elongation factor 1-alpha 1	1.0	0.9959	3	3	0	3	3	0	3	4152904.0	sp|Q5VTE0|EF1A3_HUMAN
+sp|P68363|TBA1B_HUMAN	P68363	TBA1B_HUMAN	TUBA1B	451	Homo sapiens	1:Experimental evidence at protein level	Tubulin alpha-1B chain	1.0	0.9923	2	2	0	2	2	0	2	729558.0	sp|Q71U36|TBA1A_HUMAN, sp|Q9BQE3|TBA1C_HUMAN
+sp|P68431|H31_HUMAN	P68431	H31_HUMAN	H3C1	136	Homo sapiens	1:Experimental evidence at protein level	Histone H3.1	1.0	0.9858	3	3	0	3	3	0	3	7152489.0	sp|P84243|H33_HUMAN, sp|Q16695|H31T_HUMAN, sp|Q71DI3|H32_HUMAN
+sp|P68871|HBB_HUMAN	P68871	HBB_HUMAN	HBB	147	Homo sapiens	1:Experimental evidence at protein level	Hemoglobin subunit beta	1.0	0.999	4	4	1	4	4	1	4	7078156.0	
+sp|P69905|HBA_HUMAN	P69905	HBA_HUMAN	HBA2	142	Homo sapiens	1:Experimental evidence at protein level	Hemoglobin subunit alpha	0.9459	0.997	1	1	1	1	1	1	1	587469.0	
+sp|P78324|SHPS1_HUMAN	P78324	SHPS1_HUMAN	SIRPA	504	Homo sapiens	1:Experimental evidence at protein level	Tyrosine-protein phosphatase non-receptor type substrate 1	1.0	0.9968	5	5	1	5	5	1	5	5415829.5	
+sp|P78509|RELN_HUMAN	P78509	RELN_HUMAN	RELN	3460	Homo sapiens	1:Experimental evidence at protein level	Reelin	1.0	0.997	7	7	7	7	7	7	7	1995257.1	
+sp|P98160|PGBM_HUMAN	P98160	PGBM_HUMAN	HSPG2	4391	Homo sapiens	1:Experimental evidence at protein level	Basement membrane-specific heparan sulfate proteoglycan core protein	1.0	0.999	7	7	7	7	7	7	7	2746400.2	
+sp|Q01459|DIAC_HUMAN	Q01459	DIAC_HUMAN	CTBS	385	Homo sapiens	1:Experimental evidence at protein level	Di-N-acetylchitobiase	0.9749	0.9987	1	1	1	1	1	1	1	389990.47	
+sp|Q02246|CNTN2_HUMAN	Q02246	CNTN2_HUMAN	CNTN2	1040	Homo sapiens	1:Experimental evidence at protein level	Contactin-2	1.0	0.9988	13	13	13	13	13	13	13	3201965.0	
+sp|Q06481|APLP2_HUMAN	Q06481	APLP2_HUMAN	APLP2	763	Homo sapiens	1:Experimental evidence at protein level	Amyloid beta precursor like protein 2	1.0	0.9989	6	5	5	7	5	5	7	6247191.5	
+sp|Q06828|FMOD_HUMAN	Q06828	FMOD_HUMAN	FMOD	376	Homo sapiens	1:Experimental evidence at protein level	Fibromodulin	0.8164	0.9884	1	1	1	1	1	1	1	921636.75	
+sp|Q06830|PRDX1_HUMAN	Q06830	PRDX1_HUMAN	PRDX1	199	Homo sapiens	1:Experimental evidence at protein level	Peroxiredoxin-1	1.0	0.9969	6	6	4	6	6	4	6	1765524.6	
+sp|Q08380|LG3BP_HUMAN	Q08380	LG3BP_HUMAN	LGALS3BP	585	Homo sapiens	1:Experimental evidence at protein level	Galectin-3-binding protein	1.0	0.9988	5	5	5	5	5	5	5	5886394.5	
+sp|Q12805|FBLN3_HUMAN	Q12805	FBLN3_HUMAN	EFEMP1	493	Homo sapiens	1:Experimental evidence at protein level	EGF-containing fibulin-like extracellular matrix protein 1	1.0	0.999	6	7	7	7	7	7	7	1.2111757E7	
+sp|Q12841|FSTL1_HUMAN	Q12841	FSTL1_HUMAN	FSTL1	308	Homo sapiens	1:Experimental evidence at protein level	Follistatin-related protein 1	0.78	0.9855	1	1	1	1	1	1	1	460274.12	
+sp|Q12860|CNTN1_HUMAN	Q12860	CNTN1_HUMAN	CNTN1	1018	Homo sapiens	1:Experimental evidence at protein level	Contactin-1	1.0	0.9989	26	28	28	28	28	28	28	1.1887215E7	
+sp|Q12907|LMAN2_HUMAN	Q12907	LMAN2_HUMAN	LMAN2	356	Homo sapiens	1:Experimental evidence at protein level	Vesicular integral-membrane protein VIP36	1.0	0.9963	3	3	3	3	3	3	3	2376327.0	
+sp|Q13228|SBP1_HUMAN	Q13228	SBP1_HUMAN	SELENBP1	472	Homo sapiens	1:Experimental evidence at protein level	Methanethiol oxidase	1.0	0.9799	3	3	3	3	3	3	3	895461.5	
+sp|Q13332|PTPRS_HUMAN	Q13332	PTPRS_HUMAN	PTPRS	1948	Homo sapiens	1:Experimental evidence at protein level	Receptor-type tyrosine-protein phosphatase S	0.9149	0.9952	1	1	1	1	1	1	1	578584.94	
+sp|Q13449|LSAMP_HUMAN	Q13449	LSAMP_HUMAN	LSAMP	338	Homo sapiens	1:Experimental evidence at protein level	Limbic system-associated membrane protein	1.0	0.999	6	6	6	6	6	6	6	1.1456612E7	
+sp|Q13508|NAR3_HUMAN	Q13508	NAR3_HUMAN	ART3	389	Homo sapiens	1:Experimental evidence at protein level	Ecto-ADP-ribosyltransferase 3	1.0	0.9966	2	2	2	2	2	2	2	995803.7	
+sp|Q13740|CD166_HUMAN	Q13740	CD166_HUMAN	ALCAM	583	Homo sapiens	1:Experimental evidence at protein level	CD166 antigen	1.0	0.9962	4	4	4	4	4	4	4	2582538.8	
+sp|Q13822|ENPP2_HUMAN	Q13822	ENPP2_HUMAN	ENPP2	863	Homo sapiens	1:Experimental evidence at protein level	Autotaxin	1.0	0.9989	15	19	19	19	19	19	19	2.8460352E7	
+sp|Q14019|COTL1_HUMAN	Q14019	COTL1_HUMAN	COTL1	142	Homo sapiens	1:Experimental evidence at protein level	Coactosin-like protein	0.6808	0.9761	1	1	1	1	1	1	1	272494.78	
+sp|Q14118|DAG1_HUMAN	Q14118	DAG1_HUMAN	DAG1	895	Homo sapiens	1:Experimental evidence at protein level	Dystroglycan 1	1.0	0.9986	5	5	5	5	5	5	5	6315043.5	
+sp|Q14515|SPRL1_HUMAN	Q14515	SPRL1_HUMAN	SPARCL1	664	Homo sapiens	1:Experimental evidence at protein level	SPARC-like protein 1	1.0	0.999	14	18	18	18	18	18	18	1.1271389E7	
+sp|Q14520|HABP2_HUMAN	Q14520	HABP2_HUMAN	HABP2	560	Homo sapiens	1:Experimental evidence at protein level	Factor VII-activating protease	0.581	0.9637	1	1	1	1	1	1	1	451739.4	
+sp|Q14624|ITIH4_HUMAN	Q14624	ITIH4_HUMAN	ITIH4	930	Homo sapiens	1:Experimental evidence at protein level	Inter-alpha-trypsin inhibitor heavy chain H4	1.0	0.999	20	20	20	20	20	20	20	7452600.0	
+sp|Q14982|OPCM_HUMAN	Q14982	OPCM_HUMAN	OPCML	345	Homo sapiens	1:Experimental evidence at protein level	Opioid-binding protein/cell adhesion molecule	1.0	0.9989	6	6	3	6	6	3	6	6479213.5	
+sp|Q15113|PCOC1_HUMAN	Q15113	PCOC1_HUMAN	PCOLCE	449	Homo sapiens	1:Experimental evidence at protein level	Procollagen C-endopeptidase enhancer 1	1.0	0.9984	4	4	4	4	4	4	4	5122866.0	
+sp|Q15223|NECT1_HUMAN	Q15223	NECT1_HUMAN	NECTIN1	517	Homo sapiens	1:Experimental evidence at protein level	Nectin-1	0.7485	0.9828	1	1	1	1	1	1	1	248296.66	
+sp|Q15582|BGH3_HUMAN	Q15582	BGH3_HUMAN	TGFBI	683	Homo sapiens	1:Experimental evidence at protein level	Transforming growth factor-beta-induced protein ig-h3	1.0	0.966	2	2	2	2	2	2	2	798441.75	
+sp|Q15818|NPTX1_HUMAN	Q15818	NPTX1_HUMAN	NPTX1	432	Homo sapiens	1:Experimental evidence at protein level	Neuronal pentraxin-1	1.0	0.9987	4	4	4	4	4	4	4	2801535.0	
+sp|Q15904|VAS1_HUMAN	Q15904	VAS1_HUMAN	ATP6AP1	470	Homo sapiens	1:Experimental evidence at protein level	V-type proton ATPase subunit S1	1.0	0.9959	5	5	5	5	5	5	5	2470839.0	
+sp|Q16270|IBP7_HUMAN	Q16270	IBP7_HUMAN	IGFBP7	282	Homo sapiens	1:Experimental evidence at protein level	Insulin-like growth factor-binding protein 7	1.0	0.999	3	4	4	4	4	4	4	1.2495956E7	
+sp|Q16610|ECM1_HUMAN	Q16610	ECM1_HUMAN	ECM1	540	Homo sapiens	1:Experimental evidence at protein level	Extracellular matrix protein 1	1.0	0.9951	5	5	5	5	5	5	5	4023779.2	
+sp|Q16769|QPCT_HUMAN	Q16769	QPCT_HUMAN	QPCT	361	Homo sapiens	1:Experimental evidence at protein level	Glutaminyl-peptide cyclotransferase	0.9106	0.9949	1	1	1	1	1	1	1	368373.22	
+sp|Q5T848|MGLYR_HUMAN	Q5T848	MGLYR_HUMAN	GPR158	1215	Homo sapiens	1:Experimental evidence at protein level	Metabotropic glycine receptor	0.9495	0.9972	1	1	1	1	1	1	1	614086.56	
+sp|Q6UX71|PXDC2_HUMAN	Q6UX71	PXDC2_HUMAN	PLXDC2	529	Homo sapiens	1:Experimental evidence at protein level	Plexin domain-containing protein 2	1.0	0.9976	5	5	5	5	5	5	5	2105491.2	
+sp|Q6UX73|CP089_HUMAN	Q6UX73	CP089_HUMAN	C16orf89	402	Homo sapiens	1:Experimental evidence at protein level	UPF0764 protein C16orf89	1.0	0.999	4	4	4	4	4	4	4	2431653.5	
+sp|Q6UXD5|SE6L2_HUMAN	Q6UXD5	SE6L2_HUMAN	SEZ6L2	910	Homo sapiens	1:Experimental evidence at protein level	Seizure 6-like protein 2	0.8223	0.9888	1	1	1	1	1	1	1	276891.12	
+sp|Q6ZQQ6|WDR87_HUMAN	Q6ZQQ6	WDR87_HUMAN	WDR87	2873	Homo sapiens	1:Experimental evidence at protein level	WD repeat-containing protein 87	0.6831	0.9764	1	1	1	1	1	1	1	3.8058256E7	
+sp|Q6ZSJ9|SHSA6_HUMAN	Q6ZSJ9	SHSA6_HUMAN	SHISA6	500	Homo sapiens	1:Experimental evidence at protein level	Protein shisa-6	0.9742	0.9986	1	1	1	1	1	1	1	1141952.8	
+sp|Q7Z3B1|NEGR1_HUMAN	Q7Z3B1	NEGR1_HUMAN	NEGR1	354	Homo sapiens	1:Experimental evidence at protein level	Neuronal growth regulator 1	1.0	0.9915	2	2	2	2	2	2	2	2535179.5	
+sp|Q7Z7M0|MEGF8_HUMAN	Q7Z7M0	MEGF8_HUMAN	MEGF8	2845	Homo sapiens	1:Experimental evidence at protein level	Multiple epidermal growth factor-like domains protein 8	1.0	0.9989	3	3	3	3	3	3	3	1561500.1	
+sp|Q86UX2|ITIH5_HUMAN	Q86UX2	ITIH5_HUMAN	ITIH5	942	Homo sapiens	1:Experimental evidence at protein level	Inter-alpha-trypsin inhibitor heavy chain H5	0.6729	0.9753	1	1	1	1	1	1	1	484645.8	
+sp|Q8IV08|PLD3_HUMAN	Q8IV08	PLD3_HUMAN	PLD3	490	Homo sapiens	1:Experimental evidence at protein level	5'-3' exonuclease PLD3	0.7178	0.9799	1	1	1	1	1	1	1	185617.5	
+sp|Q8IWU5|SULF2_HUMAN	Q8IWU5	SULF2_HUMAN	SULF2	870	Homo sapiens	1:Experimental evidence at protein level	Extracellular sulfatase Sulf-2	1.0	0.9989	1	1	1	1	1	1	1	1875417.2	
+sp|Q8N126|CADM3_HUMAN	Q8N126	CADM3_HUMAN	CADM3	398	Homo sapiens	1:Experimental evidence at protein level	Cell adhesion molecule 3	1.0	0.999	3	3	3	3	3	3	3	3454611.5	
+sp|Q8NBJ4|GOLM1_HUMAN	Q8NBJ4	GOLM1_HUMAN	GOLM1	401	Homo sapiens	1:Experimental evidence at protein level	Golgi membrane protein 1	0.7954	0.9868	1	1	1	1	1	1	1	680211.0	
+sp|Q8NFZ8|CADM4_HUMAN	Q8NFZ8	CADM4_HUMAN	CADM4	388	Homo sapiens	1:Experimental evidence at protein level	Cell adhesion molecule 4	1.0	0.9986	4	4	4	4	4	4	4	4204642.0	
+sp|Q8TAG5|VTM2A_HUMAN	Q8TAG5	VTM2A_HUMAN	VSTM2A	236	Homo sapiens	1:Experimental evidence at protein level	V-set and transmembrane domain-containing protein 2A	1.0	0.9988	2	3	3	3	3	3	3	3153970.8	
+sp|Q8TCZ2|C99L2_HUMAN	Q8TCZ2	C99L2_HUMAN	CD99L2	262	Homo sapiens	1:Experimental evidence at protein level	CD99 antigen-like protein 2	0.9809	0.999	1	1	1	1	1	1	1	2371673.2	
+sp|Q8TEU8|WFKN2_HUMAN	Q8TEU8	WFKN2_HUMAN	WFIKKN2	576	Homo sapiens	1:Experimental evidence at protein level	WAP, Kazal, immunoglobulin, Kunitz and NTR domain-containing protein 2	1.0	0.9882	2	2	2	2	2	2	2	816695.44	
+sp|Q8WXD2|SCG3_HUMAN	Q8WXD2	SCG3_HUMAN	SCG3	468	Homo sapiens	1:Experimental evidence at protein level	Secretogranin-3	1.0	0.9988	14	15	15	15	15	15	15	9606378.0	
+sp|Q92520|FAM3C_HUMAN	Q92520	FAM3C_HUMAN	FAM3C	227	Homo sapiens	1:Experimental evidence at protein level	Protein FAM3C	1.0	0.999	8	9	9	9	9	9	9	1.1071526E7	
+sp|Q92820|GGH_HUMAN	Q92820	GGH_HUMAN	GGH	318	Homo sapiens	1:Experimental evidence at protein level	Gamma-glutamyl hydrolase	1.0	0.9683	4	4	4	4	4	4	4	1253895.2	
+sp|Q92823|NRCAM_HUMAN	Q92823	NRCAM_HUMAN	NRCAM	1304	Homo sapiens	1:Experimental evidence at protein level	Neuronal cell adhesion molecule	1.0	0.999	20	24	24	24	24	24	24	1.3116085E7	
+sp|Q92859|NEO1_HUMAN	Q92859	NEO1_HUMAN	NEO1	1461	Homo sapiens	1:Experimental evidence at protein level	Neogenin	1.0	0.9965	6	6	6	6	6	6	6	1471688.1	
+sp|Q92876|KLK6_HUMAN	Q92876	KLK6_HUMAN	KLK6	244	Homo sapiens	1:Experimental evidence at protein level	Kallikrein-6	1.0	0.9987	5	7	7	7	7	7	7	4.0330836E7	
+sp|Q969P0|IGSF8_HUMAN	Q969P0	IGSF8_HUMAN	IGSF8	613	Homo sapiens	1:Experimental evidence at protein level	Immunoglobulin superfamily member 8	0.9808	0.999	1	1	1	1	1	1	1	697216.75	
+sp|Q96GW7|PGCB_HUMAN	Q96GW7	PGCB_HUMAN	BCAN	911	Homo sapiens	1:Experimental evidence at protein level	Brevican core protein	1.0	0.9981	5	6	6	6	6	6	6	1.2490887E7	
+sp|Q96IY4|CBPB2_HUMAN	Q96IY4	CBPB2_HUMAN	CPB2	423	Homo sapiens	1:Experimental evidence at protein level	Carboxypeptidase B2	1.0	0.9984	3	3	3	3	3	3	3	1150999.8	
+sp|Q96KN2|CNDP1_HUMAN	Q96KN2	CNDP1_HUMAN	CNDP1	507	Homo sapiens	1:Experimental evidence at protein level	Beta-Ala-His dipeptidase	1.0	0.999	14	16	16	16	16	16	16	1.7464364E7	
+sp|Q96PD5|PGRP2_HUMAN	Q96PD5	PGRP2_HUMAN	PGLYRP2	576	Homo sapiens	1:Experimental evidence at protein level	N-acetylmuramoyl-L-alanine amidase	1.0	0.999	4	4	4	4	4	4	4	4134275.0	
+sp|Q96S96|PEBP4_HUMAN	Q96S96	PEBP4_HUMAN	PEBP4	227	Homo sapiens	1:Experimental evidence at protein level	Phosphatidylethanolamine-binding protein 4	1.0	0.9986	3	3	3	3	3	3	3	3051277.5	
+sp|Q99435|NELL2_HUMAN	Q99435	NELL2_HUMAN	NELL2	816	Homo sapiens	1:Experimental evidence at protein level	Protein kinase C-binding protein NELL2	1.0	0.999	7	7	7	7	7	7	7	7938262.0	
+sp|Q99674|CGRE1_HUMAN	Q99674	CGRE1_HUMAN	CGREF1	318	Homo sapiens	1:Experimental evidence at protein level	Cell growth regulator with EF hand domain protein 1	0.9117	0.995	1	1	1	1	1	1	1	339925.03	
+sp|Q99969|RARR2_HUMAN	Q99969	RARR2_HUMAN	RARRES2	163	Homo sapiens	1:Experimental evidence at protein level	Retinoic acid receptor responder protein 2	1.0	0.9983	1	2	2	2	2	2	2	1296026.9	
+sp|Q9BQ16|TICN3_HUMAN	Q9BQ16	TICN3_HUMAN	SPOCK3	436	Homo sapiens	1:Experimental evidence at protein level	Testican-3	0.6867	0.9767	1	1	1	1	1	1	1	291804.9	
+sp|Q9BQT9|CSTN3_HUMAN	Q9BQT9	CSTN3_HUMAN	CLSTN3	956	Homo sapiens	1:Experimental evidence at protein level	Calsyntenin-3	1.0	0.999	2	2	2	2	2	2	2	2011138.2	
+sp|Q9BY67|CADM1_HUMAN	Q9BY67	CADM1_HUMAN	CADM1	442	Homo sapiens	1:Experimental evidence at protein level	Cell adhesion molecule 1	1.0	0.974	1	2	2	2	2	2	2	973161.0	
+sp|Q9BYH1|SE6L1_HUMAN	Q9BYH1	SE6L1_HUMAN	SEZ6L	1024	Homo sapiens	1:Experimental evidence at protein level	Seizure 6-like protein	0.9999	0.9619	2	2	2	2	2	2	2	1174183.8	
+sp|Q9GZM5|YIPF3_HUMAN	Q9GZM5	YIPF3_HUMAN	YIPF3	350	Homo sapiens	1:Experimental evidence at protein level	Protein YIPF3	1.0	0.9951	1	2	2	2	2	2	2	1804505.9	
+sp|Q9H8L6|MMRN2_HUMAN	Q9H8L6	MMRN2_HUMAN	MMRN2	949	Homo sapiens	1:Experimental evidence at protein level	Multimerin-2	0.7528	0.9831	1	1	1	1	1	1	1	340067.72	
+sp|Q9HAT2|SIAE_HUMAN	Q9HAT2	SIAE_HUMAN	SIAE	523	Homo sapiens	1:Experimental evidence at protein level	Sialate O-acetylesterase	0.5842	0.9642	1	1	1	1	1	1	1	272655.94	
+sp|Q9HCU4|CELR2_HUMAN	Q9HCU4	CELR2_HUMAN	CELSR2	2923	Homo sapiens	1:Experimental evidence at protein level	Cadherin EGF LAG seven-pass G-type receptor 2	0.6588	0.9737	1	1	1	1	1	1	1	273786.66	
+sp|Q9NPD7|NRN1_HUMAN	Q9NPD7	NRN1_HUMAN	NRN1	142	Homo sapiens	1:Experimental evidence at protein level	Neuritin	1.0	0.985	1	2	2	2	2	2	2	884308.75	
+sp|Q9NQ79|CRAC1_HUMAN	Q9NQ79	CRAC1_HUMAN	CRTAC1	661	Homo sapiens	1:Experimental evidence at protein level	Cartilage acidic protein 1	1.0	0.999	10	10	10	10	10	10	10	4625489.5	
+sp|Q9NQX5|NPDC1_HUMAN	Q9NQX5	NPDC1_HUMAN	NPDC1	325	Homo sapiens	1:Experimental evidence at protein level	Neural proliferation differentiation and control protein 1	0.9757	0.9987	1	1	1	1	1	1	1	535074.0	
+sp|Q9NT99|LRC4B_HUMAN	Q9NT99	LRC4B_HUMAN	LRRC4B	713	Homo sapiens	1:Experimental evidence at protein level	Leucine-rich repeat-containing protein 4B	0.9617	0.9979	1	1	1	1	1	1	1	564116.9	
+sp|Q9P121|NTRI_HUMAN	Q9P121	NTRI_HUMAN	NTM	344	Homo sapiens	1:Experimental evidence at protein level	Neurotrimin	1.0	0.999	5	2	2	5	2	2	5	3036263.0	
+sp|Q9P2S2|NRX2A_HUMAN	Q9P2S2	NRX2A_HUMAN	NRXN2	1712	Homo sapiens	1:Experimental evidence at protein level	Neurexin-2	1.0	0.999	6	4	2	6	4	2	6	2744727.5	
+sp|Q9UBP4|DKK3_HUMAN	Q9UBP4	DKK3_HUMAN	DKK3	350	Homo sapiens	1:Experimental evidence at protein level	Dickkopf-related protein 3	1.0	0.999	5	9	9	9	9	9	9	5.5644072E7	
+sp|Q9UBQ6|EXTL2_HUMAN	Q9UBQ6	EXTL2_HUMAN	EXTL2	330	Homo sapiens	1:Experimental evidence at protein level	Exostosin-like 2	0.5902	0.965	1	1	1	1	1	1	1	285908.34	
+sp|Q9UBR2|CATZ_HUMAN	Q9UBR2	CATZ_HUMAN	CTSZ	303	Homo sapiens	1:Experimental evidence at protein level	Cathepsin Z	1.0	0.9969	2	2	2	2	2	2	2	1141987.2	
+sp|Q9UBX5|FBLN5_HUMAN	Q9UBX5	FBLN5_HUMAN	FBLN5	448	Homo sapiens	1:Experimental evidence at protein level	Fibulin-5	0.6406	0.9715	1	1	1	1	1	1	1	546788.94	
+sp|Q9UHG2|PCS1N_HUMAN	Q9UHG2	PCS1N_HUMAN	PCSK1N	260	Homo sapiens	1:Experimental evidence at protein level	ProSAAS	1.0	0.999	5	5	5	5	5	5	5	9826193.0	
+sp|Q9UL62|TRPC5_HUMAN	Q9UL62	TRPC5_HUMAN	TRPC5	973	Homo sapiens	1:Experimental evidence at protein level	Short transient receptor potential channel 5	0.5683	0.9619	1	1	1	1	1	1	1	4.50545792E8	
+sp|Q9ULB1|NRX1A_HUMAN	Q9ULB1	NRX1A_HUMAN	NRXN1	1477	Homo sapiens	1:Experimental evidence at protein level	Neurexin-1	1.0	0.997	5	3	2	5	3	2	5	1316514.0	
+sp|Q9UM22|EPDR1_HUMAN	Q9UM22	EPDR1_HUMAN	EPDR1	224	Homo sapiens	1:Experimental evidence at protein level	Mammalian ependymin-related protein 1	0.5772	0.9632	1	1	1	1	1	1	1	529592.7	
+sp|Q9Y4C0|NRX3A_HUMAN	Q9Y4C0	NRX3A_HUMAN	NRXN3	1643	Homo sapiens	1:Experimental evidence at protein level	Neurexin-3	1.0	0.9979	10	10	3	10	10	3	10	4432020.5	
+sp|Q9Y5Y7|LYVE1_HUMAN	Q9Y5Y7	LYVE1_HUMAN	LYVE1	322	Homo sapiens	1:Experimental evidence at protein level	Lymphatic vessel endothelial hyaluronic acid receptor 1	0.6345	0.9708	1	1	1	1	1	1	1	342685.88	
+sp|Q9Y623|MYH4_HUMAN	Q9Y623	MYH4_HUMAN	MYH4	1939	Homo sapiens	1:Experimental evidence at protein level	Myosin-4	0.9796	0.9919	2	2	1	2	2	1	2	1347999.6	
+sp|Q9Y646|CBPQ_HUMAN	Q9Y646	CBPQ_HUMAN	CPQ	472	Homo sapiens	1:Experimental evidence at protein level	Carboxypeptidase Q	1.0	0.9947	5	5	5	5	5	5	5	1478659.1	
