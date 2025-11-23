@@ -1,0 +1,48 @@
+combine_proteins.py
+Load the FragPipe files
+You have to seperate the ALS and Control combined_proteins.tsv files into two folders
+Point to the ALS folder and the control folder.
+
+Make sure I can read each combined_protein.tsv using pd.read_csv(..., sep="\t").
+
+3. Tag each sample
+
+Give each dataframe a label so I know where it came from (ALS or Control).
+
+Add a sample name too 
+
+4. Keep only the useful columns
+
+Protein ID, gene name, intensity/abundance columns.
+
+Drop the extra stuff so the dataframes are cleaner.
+
+5. Combine everything
+
+Stack all ALS and control files together with pd.concat.
+
+Reset the index and check the shape.
+
+6. Deal with repeats
+
+Some proteins show up in multiple samples.
+
+Decide if I want to keep every row or reshape later.
+
+7. Save the output
+
+Write the final dataframe to a results folder as a TSV or CSV.
+
+8. Test it
+
+Run the script once, fix any path issues.
+
+Quickly check that the output file looks right.
+
+9. Add comments
+
+Leave short explanations in the code so it’s easy to follow later.
+
+10. Commit to GitHub
+
+Save the progress with a clear commit message.
