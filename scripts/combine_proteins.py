@@ -122,7 +122,7 @@ def main():
         print("Using uploaded combined control file:", UPLOAD_CONTROL_FILE.name)
         print("Control columns:", list(ctrl_map.values()))
         # merged control is single df
-        control_merged = control_cleaned
+        control_merged = control_cleaned 
     else:
         # look in CONTROL_FOLDER
         control_paths = sorted(CONTROL_FOLDER.glob("*.tsv"))
