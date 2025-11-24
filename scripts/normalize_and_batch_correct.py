@@ -59,7 +59,7 @@ def main():
 
     combined = als.merge(ctrl, on=KEYS, how="outer")
     combined.to_csv("results/combined_proteins_maxlfq.csv", index=False)
-    print("Saved combined file.")
+    print("Saved combined file. ")
 
 if __name__ == "__main__":
     main()
