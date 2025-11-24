@@ -17,8 +17,9 @@ import sys
 import logging
 
 # -------- Paths --------
-# Input file containing protein intensities from MaxLFQ
-INPUT = Path("/mnt/data/combined_proteins_maxlfq.csv")
+# Input file containing protein intensities from MaxLFQ straight from combine_proteins.py
+INPUT = Path("results/combined_proteins_maxlfq.csv")
+
 
 # Output files
 NORMALIZED_OUT = Path("results/normalized_proteins.csv")
