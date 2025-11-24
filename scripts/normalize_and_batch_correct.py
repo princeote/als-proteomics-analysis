@@ -1,65 +1,47 @@
 #!/usr/bin/env python3
+"""
+Normalize MaxLFQ intensities (early version)
+"""
 
-# cleaned version of combine script
-# fixed ID selection + merge strategy + warnings
-
-import pandas as pd
 from pathlib import Path
+import pandas as pd
+import numpy as np
+import logging
 import sys
 
-ALS_FOLDER = Path("data/fragpipe/ALS")
-CTRL_FOLDER = Path("data/fragpipe/control")
+INPUT = Path("results/combined_proteins_maxlfq.csv")
+NORMALIZED_OUT = Path("results/normalized_proteins.csv")
 
-KEYS = ["Protein", "Gene"]
-
-def load(path):
-    return pd.read_csv(path, sep="\t", low_memory=False)
-
-def process_als():
-    dfs = []
-    for i, f in enumerate(sorted(ALS_FOLDER.glob("*.tsv")), start=1):
-        df = load(f)
-        maxlfq = [c for c in df.columns if "MaxLFQ Intensity" in c]
-        if len(maxlfq) < 1:
-            print(f"Warning: no MaxLFQ in ALS file {f.name}")
-            continue
-
-        # take first 4 (FragPipe sometimes outputs more)
-        chosen = maxlfq[:4]
-        sub = df[KEYS + chosen].copy()
-        rename = {c: f"ALS_{i}_T{j+1}_MaxLFQ_Intensity" for j, c in enumerate(chosen)}
-        sub = sub.rename(columns=rename)
-        dfs.append(sub)
-
-    merged = dfs[0]
-    for d in dfs[1:]:
-        merged = merged.merge(d, on=KEYS, how="outer")
-    return merged
-
-def process_ctrl():
-    dfs = []
-    for i, f in enumerate(sorted(CTRL_FOLDER.glob("*.tsv")), start=1):
-        df = load(f)
-        maxlfq = [c for c in df.columns if "MaxLFQ Intensity" in c]
-        if not maxlfq:
-            print(f"Warning: no MaxLFQ in CTRL file {f.name}")
-            continue
-        sub = df[KEYS + [maxlfq[0]]].copy()
-        sub = sub.rename(columns={maxlfq[0]: f"Control_{i}_MaxLFQ_Intensity"})
-        dfs.append(sub)
-
-    merged = dfs[0]
-    for d in dfs[1:]:
-        merged = merged.merge(d, on=KEYS, how="outer")
-    return merged
+def median_normalize(df):
+    med = df.median(axis=0)
+    gm = med.median()
+    return df.subtract(med, axis=1).add(gm)
 
 def main():
-    als = process_als()
-    ctrl = process_ctrl()
+    logging.basicConfig(level=logging.INFO)
 
-    combined = als.merge(ctrl, on=KEYS, how="outer")
-    combined.to_csv("results/combined_proteins_maxlfq.csv", index=False)
-    print("Saved combined file. ")
+    if not INPUT.exists():
+        logging.error("Missing combined file.")
+        sys.exit(1)
+
+    df = pd.read_csv(INPUT)
+    meta = df[["Protein", "Gene"]].copy()
+    X = df.drop(columns=["Protein", "Gene"]).replace(0, np.nan)
+
+    # log2 transform
+    X = np.log2(X)
+
+    # FIXED: filtering bug + correct alignment
+    keep = X.isna().mean(axis=1) <= 0.30
+    X = X.loc[keep].reset_index(drop=True)
+    meta = meta.loc[keep].reset_index(drop=True)
+
+    # normalize
+    X_norm = median_normalize(X)
+
+    NORMALIZED_OUT.parent.mkdir(parents=True, exist_ok=True)
+    pd.concat([meta, X_norm], axis=1).to_csv(NORMALIZED_OUT, index=False)
+    logging.info("Saved normalized matrix.")
 
 if __name__ == "__main__":
     main()
