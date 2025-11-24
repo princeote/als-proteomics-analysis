@@ -1,61 +1,65 @@
 #!/usr/bin/env python3
 
-# first draft of script to combine ALS + Control protein tables
-# NOTE: super rough, need cleanup later
+# cleaned version of combine script
+# fixed ID selection + merge strategy + warnings
 
 import pandas as pd
-import os
 from pathlib import Path
+import sys
 
 ALS_FOLDER = Path("data/fragpipe/ALS")
 CTRL_FOLDER = Path("data/fragpipe/control")
 
-# TODO: handle cases where Protein ID column is missing...
+KEYS = ["Protein", "Gene"]
 
-def load_file(path):
-    return pd.read_csv(path, sep="\t")
+def load(path):
+    return pd.read_csv(path, sep="\t", low_memory=False)
 
-def combine_als(folder):
+def process_als():
     dfs = []
-    i = 1
-    for f in sorted(folder.glob("*.tsv")):
-        df = load_file(f)
-        # BUG: this assumes exactly 4 MaxLFQ columns; fix later
-        cols = [c for c in df.columns if "MaxLFQ Intensity" in c][:4]
-        sub = df[["Protein", "Gene"] + cols]
-        rename = {c: f"ALS_{i}_T{idx+1}_MaxLFQ_Intensity" for idx, c in enumerate(cols)}
+    for i, f in enumerate(sorted(ALS_FOLDER.glob("*.tsv")), start=1):
+        df = load(f)
+        maxlfq = [c for c in df.columns if "MaxLFQ Intensity" in c]
+        if len(maxlfq) < 1:
+            print(f"Warning: no MaxLFQ in ALS file {f.name}")
+            continue
+
+        # take first 4 (FragPipe sometimes outputs more)
+        chosen = maxlfq[:4]
+        sub = df[KEYS + chosen].copy()
+        rename = {c: f"ALS_{i}_T{j+1}_MaxLFQ_Intensity" for j, c in enumerate(chosen)}
         sub = sub.rename(columns=rename)
         dfs.append(sub)
-        i += 1
-    # BUG: wrong merge strategy, should be outer not inner
+
     merged = dfs[0]
     for d in dfs[1:]:
-        merged = merged.merge(d, on=["Protein", "Gene"])
+        merged = merged.merge(d, on=KEYS, how="outer")
     return merged
 
-def combine_ctrl(folder):
+def process_ctrl():
     dfs = []
-    i = 1
-    for f in sorted(folder.glob("*.tsv")):
-        df = load_file(f)
-        cols = [c for c in df.columns if "MaxLFQ Intensity" in c]
-        if len(cols) == 0:
-            continue  # BUG: should warn about skipped files
-        sub = df[["Protein", "Gene", cols[0]]]
-        sub = sub.rename(columns={cols[0]: f"Control_{i}_MaxLFQ_Intensity"})
+    for i, f in enumerate(sorted(CTRL_FOLDER.glob("*.tsv")), start=1):
+        df = load(f)
+        maxlfq = [c for c in df.columns if "MaxLFQ Intensity" in c]
+        if not maxlfq:
+            print(f"Warning: no MaxLFQ in CTRL file {f.name}")
+            continue
+        sub = df[KEYS + [maxlfq[0]]].copy()
+        sub = sub.rename(columns={maxlfq[0]: f"Control_{i}_MaxLFQ_Intensity"})
         dfs.append(sub)
-        i += 1
+
     merged = dfs[0]
     for d in dfs[1:]:
-        merged = merged.merge(d, on=["Protein", "Gene"])
+        merged = merged.merge(d, on=KEYS, how="outer")
     return merged
 
 def main():
-    als = combine_als(ALS_FOLDER)
-    ctrl = combine_ctrl(CTRL_FOLDER)
+    als = process_als()
+    ctrl = process_ctrl()
 
-    combined = als.merge(ctrl, on=["Protein", "Gene"])  # BUG: should be outer merge
+    combined = als.merge(ctrl, on=KEYS, how="outer")
     combined.to_csv("results/combined_proteins_maxlfq.csv", index=False)
+    print("Saved combined file.")
 
 if __name__ == "__main__":
     main()
