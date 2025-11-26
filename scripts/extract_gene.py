@@ -23,8 +23,8 @@ genes = (
 out_path = Path("results/genes_for_panther.txt")
 out_path.parent.mkdir(parents=True, exist_ok=True)
 
-# Save as comma-separated list
+# Save space-separated list
 with open(out_path, "w") as f:
-    f.write(",".join(genes))
+    f.write(" ".join(genes))
 
-print(f"Saved {len(genes)} comma-separated gene symbols to: {out_path}")
+print(f"Saved {len(genes)} space-separated gene symbols to: {out_path}")
