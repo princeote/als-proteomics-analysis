@@ -15,22 +15,24 @@ with open(ecm_genes_path) as f:
 with open(ups_genes_path) as f:
     ups_genes = set(line.strip() for line in f)
 
-# Check which genes from the normalized proteins file are in ECM or UPS
-df['Gene_Type'] = df['Gene'].apply(
-    lambda g: 'ECM' if g in ecm_genes else ('UPS' if g in ups_genes else None)
-)
-
-# Keep only rows that are in ECM or UPS
-filtered_df = df[df['Gene_Type'].notna()]
+# Filter rows for ECM and UPS
+ecm_filtered = df[df['Gene'].isin(ecm_genes)]
+ups_filtered = df[df['Gene'].isin(ups_genes)]
 
 # Save filtered normalized proteins
+filtered_df = pd.concat([ecm_filtered, ups_filtered])
 filtered_df.to_csv("results/filtered_normalized_proteins.csv", index=False)
 
-# Save separate lists of genes found
-filtered_df[filtered_df['Gene_Type'] == 'ECM']['Gene'].to_csv("results/ecm_genes_found.txt", index=False, header=False)
-filtered_df[filtered_df['Gene_Type'] == 'UPS']['Gene'].to_csv("results/ups_genes_found.txt", index=False, header=False)
+# Save combined gene list with headers
+with open("results/genes_found_combined.txt", "w") as f:
+    f.write("ECM Genes:\n")
+    for gene in ecm_filtered['Gene'].unique():
+        f.write(f"{gene}\n")
+    
+    f.write("\nUPS Genes:\n")
+    for gene in ups_filtered['Gene'].unique():
+        f.write(f"{gene}\n")
 
 print("Filtering complete. Files saved:")
 print("- filtered_normalized_proteins.csv")
-print("- ecm_genes_found.txt")
-print("- ups_genes_found.txt")
+print("- genes_found_combined.txt")
