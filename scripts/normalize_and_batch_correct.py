@@ -7,6 +7,7 @@ Unified pipeline with:
 - Optional ComBat
 - Full QC plots (pre and post)
 - Distinct ALS colors + black controls
+- Tracking passed/failed proteins by missingness
 """
 
 from pathlib import Path
@@ -34,13 +35,13 @@ ALS_COLORS = {
     "ALS_8":  "#7f7f7f",
     "ALS_9":  "#bcbd22",
     "ALS_10": "#17becf",
+    "ALS_11": "#393b79",
 }
 
 CONTROL_COLOR = "black"
 
 
 def clean_name(name):
-    # Remove anything starting with MaxLFQ at the end
     out = name
     out = out.split("_MaxLFQ")[0]
     out = out.split(" MaxLFQ")[0]
@@ -49,12 +50,11 @@ def clean_name(name):
     return out.strip()
 
 
-
 def get_sample_color(colname):
     clean = clean_name(colname)
     if clean.startswith("Control"):
         return CONTROL_COLOR
-    subject = clean.split("_T")[0]  # ALS_1, ALS_2, etc.
+    subject = clean.split("_T")[0]
     return ALS_COLORS.get(subject, CONTROL_COLOR)
 
 
@@ -95,13 +95,11 @@ def qc_density(df, outpath):
             df[col].dropna(),
             color=get_sample_color(col),
             linewidth=1.5,
-            label=clean_name(col)
         )
 
     plt.title("Intensity Density Curves")
     plt.xlabel("Log2 Intensity")
     plt.ylabel("Density")
-    plt.legend(fontsize=6, ncol=2)
     plt.tight_layout()
     plt.savefig(outpath)
     plt.close()
@@ -168,7 +166,7 @@ INPUT = Path("results/combined_proteins_maxlfq.csv")
 NORMALIZED_OUT = Path("results/normalized_proteins.csv")
 BATCH_CORRECTED_OUT = Path("results/batch_corrected_proteins.csv")
 
-batch_map = {}   # leave empty unless you have batches
+batch_map = {}
 
 
 def main():
@@ -197,9 +195,31 @@ def main():
     qc_density(X, "plots/qc_density_pre.png")
     qc_pca(X, "plots/qc_pca_pre.png")
 
-    # Filter proteins (>30% missing)
+    # ---------- PROTEIN FILTERING ----------
     logging.info("Filtering proteins missing >30%...")
-    keep = X.isna().mean(axis=1) <= 0.30
+
+    percent_missing = X.isna().mean(axis=1) * 100
+    percent_missing.name = "Percent_Missing"
+
+    Path("results").mkdir(exist_ok=True)
+
+    passed_proteins = pd.DataFrame({
+        "Protein": meta.index,
+        "Percent_Missing": percent_missing
+    }).loc[percent_missing <= 30]
+
+    failed_proteins = pd.DataFrame({
+        "Protein": meta.index,
+        "Percent_Missing": percent_missing
+    }).loc[percent_missing > 30]
+
+    passed_proteins.to_csv("results/proteins_passed_70pct.csv", index=False)
+    failed_proteins.to_csv("results/proteins_failed_70pct.csv", index=False)
+
+    logging.info(f"{passed_proteins.shape[0]} proteins passed the 70% coverage filter.")
+    logging.info(f"{failed_proteins.shape[0]} proteins failed and were removed.")
+
+    keep = percent_missing <= 30
     meta = meta.loc[keep].reset_index(drop=True)
     X = X.loc[keep].reset_index(drop=True)
 
@@ -248,7 +268,6 @@ def main():
     qc_density(X_norm, "plots/qc_density_post.png")
     qc_pca(X_norm, "plots/qc_pca_post.png")
 
-    # Save normalized
     NORMALIZED_OUT.parent.mkdir(parents=True, exist_ok=True)
     pd.concat([meta, X_norm], axis=1).to_csv(NORMALIZED_OUT, index=False)
     logging.info("Saved normalized matrix.")
