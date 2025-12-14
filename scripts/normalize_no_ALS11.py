@@ -162,9 +162,9 @@ def combat_correct(df, batch_labels):
 # MAIN PIPELINE
 # ------------------------------------------------------------
 
-INPUT = Path("results/combined_proteins.csv")
-NORMALIZED_OUT = Path("results/normalized_proteins.csv")
-BATCH_CORRECTED_OUT = Path("results/batch_corrected_proteins.csv")
+INPUT = Path("results/combined_proteins_without_ALS_11.csv")
+NORMALIZED_OUT = Path("results/normalized_proteins_without_ALS_11.csv")
+BATCH_CORRECTED_OUT = Path("results/batch_corrected_proteins_without_ALS_11.csv")
 
 batch_map = {}
 
@@ -190,10 +190,10 @@ def main():
     X = np.log2(X)
 
     # ---------- PRE-NORMALIZATION QC ----------
-    qc_total_intensity(X, "plots/qc_total_pre.png")
-    qc_missingness(X, "plots/qc_missing_pre.png")
-    qc_density(X, "plots/qc_density_pre.png")
-    qc_pca(X, "plots/qc_pca_pre.png")
+    qc_total_intensity(X, "plots/qc_total_pre_without_ALS_11.png")
+    qc_missingness(X, "plots/qc_missing_pre_without_ALS_11.png")
+    qc_density(X, "plots/qc_density_pre_without_ALS_11.png")
+    qc_pca(X, "plots/qc_pca_pre_without_ALS_11.png")
 
     # ---------- PROTEIN FILTERING ----------
     logging.info("Filtering proteins missing >30%...")
@@ -226,15 +226,9 @@ def main():
         "Percent_Missing": percent_missing
     }).loc[percent_missing > 30]
 
-    passed_proteins.to_csv("results/proteins_passed_70pct.csv", index=False)
-    failed_proteins.to_csv("results/proteins_failed_70pct.csv", index=False)
+    passed_proteins.to_csv("results/proteins_passed_70pct_without_ALS_11.csv", index=False)
+    failed_proteins.to_csv("results/proteins_failed_70pct_without_ALS_11.csv", index=False)
 
-    # -------------------------------
-    # FILTER X AND META TO PASSED ONLY
-    # -------------------------------
-    passed_idx = percent_missing <= 30
-    X = X.loc[passed_idx]
-    meta = meta.loc[passed_idx]
 
     # Extra QC after filtering
     missing_per_sample = X.isna().mean() * 100
@@ -263,20 +257,20 @@ def main():
     plt.savefig("plots/qc_boxplot.png")
     plt.close()
 
+
     # ---------- NORMALIZATION ----------
     logging.info("Median normalizing...")
     X_norm = median_normalize(X)
 
     # ---------- POST-NORMALIZATION QC ----------
-    qc_total_intensity(X_norm, "plots/qc_total_post.png")
-    qc_missingness(X_norm, "plots/qc_missing_post.png")
-    qc_density(X_norm, "plots/qc_density_post.png")
-    qc_pca(X_norm, "plots/qc_pca_post.png")
+    qc_total_intensity(X_norm, "plots/qc_total_post_without_ALS_11.png")
+    qc_missingness(X_norm, "plots/qc_missing_post_without_ALS_11.png")
+    qc_density(X_norm, "plots/qc_density_post_without_ALS_11.png")
+    qc_pca(X_norm, "plots/qc_pca_post_without_ALS_11.png")
 
     NORMALIZED_OUT.parent.mkdir(parents=True, exist_ok=True)
-    # ---- OUTPUT ONLY PASSED PROTEINS ----
     pd.concat([meta, X_norm], axis=1).to_csv(NORMALIZED_OUT, index=False)
-    logging.info("Saved normalized matrix (only passed proteins).")
+    logging.info("Saved normalized matrix.")
 
     # ---------- OPTIONAL COMBAT ----------
     if batch_map:
