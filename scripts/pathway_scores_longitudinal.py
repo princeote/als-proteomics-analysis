@@ -1,153 +1,100 @@
 import pandas as pd
 import numpy as np
+from scipy.stats import linregress, ttest_ind
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sklearn.decomposition import PCA
-from scipy.stats import linregress, pearsonr, ttest_1samp
 import os
 
-# Set global plot style
+# Set plot style
 sns.set_theme(style="whitegrid")
 
-# Create directories if they don't exist
-for folder in ['results', 'plots']:
-    if not os.path.exists(folder):
-        os.makedirs(folder)
+# Create directories
+os.makedirs('plots', exist_ok=True)
+os.makedirs('results', exist_ok=True)
 
 # ========================================================
-# 1. DATA LOADING & PRE-PROCESSING
+# 1. LOAD DATA
 # ========================================================
-df = pd.read_csv("results/filtered_normalized_proteins.csv")
+df = pd.read_csv("results/normalized_proteins.csv")
+pheno_df = pd.read_csv("results/patient_phenotypes.csv")
 
-if 'Gene' not in df.columns:
-    df['Gene'] = df['Protein'].astype(str).str.strip().str.upper()
-else:
-    df['Gene'] = df['Gene'].astype(str).str.strip().str.upper()
-
-# Aggregate Proteins -> Genes (using median) and Transpose
-gene_df = df.drop(columns=['Protein'], errors='ignore').groupby('Gene').median().T
-gene_df.index = gene_df.index.astype(str).str.strip()
+# Standardize Gene column
+df['Gene'] = df['Gene'].astype(str).str.strip().str.upper()
 
 # ========================================================
-# 2. METADATA EXTRACTION
+# 2. CALCULATE PROTEIN SLOPES PER PATIENT
 # ========================================================
-metadata = pd.DataFrame({'Sample_ID': gene_df.index})
-metadata['Group'] = metadata['Sample_ID'].apply(
-    lambda x: 'ALS' if 'ALS' in x.upper() else 'CONTROL' if 'CONTROL' in x.upper() else 'UNKNOWN'
-)
-metadata['Patient_ID'] = metadata['Sample_ID'].str.extract(r'^([A-Za-z]+_\d+)')
-metadata['Timepoint_Num'] = metadata['Sample_ID'].str.extract(r'T(\d+)').astype(float)
+als_patients = pheno_df['Patient_ID'].tolist()
+timepoints = ['T1', 'T2', 'T3', 'T4']
+x_months = np.array([0, 6, 12, 18])
 
-# ========================================================
-# 3. LOAD PATHWAY GENE LISTS
-# ========================================================
-def load_genes(path, data_genes):
-    full_path = os.path.join("gene_list", path)
-    try:
-        gl = pd.read_csv(full_path, header=None)
-        list_genes = gl.iloc[:, 0].astype(str).str.strip().str.upper().unique().tolist()
-        return [g for g in list_genes if g in data_genes]
-    except Exception as e:
-        print(f"Error loading {full_path}: {e}")
-        return []
+# Function to compute slope per protein for a patient
+def protein_slope(row, patient_id):
+    y = [row[f'{patient_id}_{tp}_MaxLFQ_Intensity'] for tp in timepoints]
+    y = np.array(y, dtype=float)  # Ensure numeric
+    mask = ~np.isnan(y)
+    if np.sum(mask) < 2:
+        return np.nan
+    return linregress(x_months[mask], y[mask])[0]
 
-data_genes = set(gene_df.columns)
-ecm_genes = load_genes("ECM_genes.csv", data_genes)
-comp_genes = load_genes("Complement_genes.csv", data_genes)
-all_module_genes = list(set(ecm_genes + comp_genes))
+# Build patient-level slope table
+slope_data = {'Gene': df['Gene']}
+for patient in als_patients:
+    slope_data[patient] = df.apply(lambda row: protein_slope(row, patient), axis=1)
 
-# ========================================================
-# 4. NORMALIZATION (CONTROL-ANCHORED Z-SCORING)
-# ========================================================
-controls = metadata[metadata['Group'] == 'CONTROL']['Sample_ID']
-control_mean = gene_df.loc[controls].mean()
-control_std = gene_df.loc[controls].std().replace(0, np.nan)
+slopes_df = pd.DataFrame(slope_data)
 
-z_scores = (gene_df - control_mean) / control_std
-z_scores_clean = z_scores.fillna(0).replace([np.inf, -np.inf], 0)
-
-# Calculate Module Activity Scores
-metadata['ECM_Score'] = z_scores_clean[ecm_genes].median(axis=1).values
-metadata['Complement_Score'] = z_scores_clean[comp_genes].median(axis=1).values
+# Ensure all numeric
+for patient in als_patients:
+    slopes_df[patient] = pd.to_numeric(slopes_df[patient], errors='coerce')
 
 # ========================================================
-# 5. LONGITUDINAL SLOPE ANALYSIS (ECM & COMPLEMENT)
+# 3. PREPARE FAST VS SLOW PATIENTS
 # ========================================================
-als_only = metadata[metadata['Group'] == 'ALS']
-patient_slopes = []
-
-for pid in als_only['Patient_ID'].dropna().unique():
-    p_data = als_only[als_only['Patient_ID'] == pid].sort_values('Timepoint_Num')
-    if len(p_data) > 1:
-        # Calculate Slope for ECM
-        e_slope, _, _, _, _ = linregress(p_data['Timepoint_Num'], p_data['ECM_Score'])
-        # Calculate Slope for Complement
-        c_slope, _, _, _, _ = linregress(p_data['Timepoint_Num'], p_data['Complement_Score'])
-        
-        patient_slopes.append({
-            'Patient_ID': pid, 
-            'ECM_Slope': e_slope, 
-            'Comp_Slope': c_slope
-        })
-
-slope_df = pd.DataFrame(patient_slopes)
+fast_patients = pheno_df[pheno_df['Phenotype'] == 'Fast']['Patient_ID'].tolist()
+slow_patients = pheno_df[pheno_df['Phenotype'] == 'Slow']['Patient_ID'].tolist()
 
 # ========================================================
-# 6. PLOTTING THE KEY FINDINGS
+# 4. CALCULATE P-VALUES
 # ========================================================
+stats = []
+for _, row in slopes_df.iterrows():
+    gene = row['Gene']
+    if gene == 'CHI3L1':  # skip the anchor
+        continue
 
-# PLOT 1: Complement vs ECM Activity Correlation
-plt.figure(figsize=(8, 6))
-sns.regplot(data=als_only, x='Complement_Score', y='ECM_Score', color='darkred')
-corr, p_corr = pearsonr(als_only['Complement_Score'], als_only['ECM_Score'])
-plt.title(f"1. Module Activity Interplay\nr = {corr:.2f}, p = {p_corr:.2e}")
-plt.savefig("results/interplay_activity_correlation.png")
+    f_vals = np.array(row[fast_patients], dtype=float)
+    s_vals = np.array(row[slow_patients], dtype=float)
 
-# PLOT 2: ECM Progression Slopes (FIXED Palette Warning)
-plt.figure(figsize=(10, 6))
-slope_df_e = slope_df.sort_values('ECM_Slope', ascending=False)
-sns.barplot(data=slope_df_e, x='Patient_ID', y='ECM_Slope', hue='Patient_ID', palette="Reds_r", legend=False)
-plt.xticks(rotation=45)
-plt.title("2. Patient-Specific ECM Progression Rates")
-plt.savefig("plots/ecm_progression_slopes.png")
+    if np.sum(~np.isnan(f_vals)) > 1 and np.sum(~np.isnan(s_vals)) > 1:
+        _, p = ttest_ind(f_vals, s_vals, nan_policy='omit')
+        stats.append({'Gene': gene, 'P_Value': p})
 
-# PLOT 3: Complement Progression Slopes (FIXED Palette Warning)
-plt.figure(figsize=(10, 6))
-slope_df_c = slope_df.sort_values('Comp_Slope', ascending=False)
-sns.barplot(data=slope_df_c, x='Patient_ID', y='Comp_Slope', hue='Patient_ID', palette="Blues_r", legend=False)
-plt.xticks(rotation=45)
-plt.title("3. Patient-Specific Complement Progression Rates")
-plt.savefig("plots/complement_progression_slopes.png")
-
-# PLOT 4: Slope Alignment
-plt.figure(figsize=(8, 6))
-sns.regplot(data=slope_df, x='ECM_Slope', y='Comp_Slope', color='purple')
-s_corr, s_p = pearsonr(slope_df['ECM_Slope'], slope_df['Comp_Slope'])
-plt.title(f"4. Progression Alignment: ECM vs Complement Slopes\nr = {s_corr:.2f}, p = {s_p:.2e}")
-plt.xlabel("ECM Progression Rate (Slope)")
-plt.ylabel("Complement Progression Rate (Slope)")
-plt.savefig("plots/slope_alignment_correlation.png")
-
-# PLOT 5: Hub Heatmap
-top_30 = z_scores_clean[all_module_genes].std().sort_values(ascending=False).head(30).index
-sns.clustermap(z_scores_clean[top_30].T, cmap='vlag', center=0, 
-               col_colors=metadata['Group'].map({'ALS': 'orange', 'CONTROL': 'grey'}).values)
-plt.savefig("plots/hub_heatmap.png")
+winners_df = pd.DataFrame(stats).sort_values('P_Value').reset_index(drop=True)
+winners_df.to_csv("results/Fast_vs_Slow_Protein_PValues.csv", index=False)
+print("Saved Fast_vs_Slow_Protein_PValues.csv")
 
 # ========================================================
-# 7. EXPORTS
+# 5. VISUALIZATION (TOP 8 PROTEINS)
 # ========================================================
-median_slope = slope_df['ECM_Slope'].median()
-slope_df['Progression_Type'] = np.where(slope_df['ECM_Slope'] > median_slope, 'Fast Remodeler', 'Slow Remodeler')
-slope_df.to_csv("results/ALS_Detailed_Progression_Analysis.csv", index=False)
+top8 = winners_df['Gene'].head(8).tolist()
+palette = {'Fast': 'red', 'Slow': 'blue', 'Middle': 'lightgrey'}
 
-# Identify Hub Proteins
-top_hubs = z_scores_clean[all_module_genes].std().sort_values(ascending=False).head(20)
-hub_summary = pd.DataFrame({
-    'Gene': top_hubs.index,
-    'Variability': top_hubs.values,
-    'Module': ['ECM' if g in ecm_genes else 'Complement' for g in top_hubs.index]
-})
-hub_summary.to_csv("results/Top_ALS_Hub_Proteins.csv", index=False)
+fig, axes = plt.subplots(4, 2, figsize=(14, 12))
+axes = axes.flatten()
 
-print(f"Finished! Files saved in 'plots/' and 'results/'. Found {len(ecm_genes)} ECM genes and {len(comp_genes)} Complement genes.")
+for i, gene in enumerate(top8):
+    plot_data = pd.DataFrame({
+        'Patient_ID': fast_patients + slow_patients,
+        'Slope': slopes_df.loc[slopes_df['Gene']==gene, fast_patients + slow_patients].values.flatten(),
+        'Group': ['Fast']*len(fast_patients) + ['Slow']*len(slow_patients)
+    })
+    sns.boxplot(data=plot_data, x='Group', y='Slope', palette=palette, ax=axes[i])
+    sns.stripplot(data=plot_data, x='Group', y='Slope', color='black', size=6, ax=axes[i], jitter=True)
+    p_val = winners_df[winners_df['Gene']==gene]['P_Value'].values[0]
+    axes[i].set_title(f"{gene} (Fast vs Slow p={p_val:.2e})", fontsize=12, fontweight='bold')
+    axes[i].set_ylabel("Protein Slope")
+
+plt.tight_layout()
+plt.savefig("plots/Top8_Fast_vs_Slow_Protein_Slopes.png", dpi=300)
+plt.show()
